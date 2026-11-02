@@ -1,65 +1,61 @@
 import { profile } from '../data/profile.js';
-import { useReveal } from '../hooks/useReveal.js';
-import SectionHead from './SectionHead.jsx';
-import { SaveIcon, ShareIcon, ArrowIcon, CheckIcon } from './Icons.jsx';
+import { personalChannels, organisationChannels } from '../lib/channels.js';
+import SectionMark from './SectionMark.jsx';
+import { SaveIcon, CheckIcon, ShareIcon, ArrowIcon, PhoneIcon, ChatIcon, MailIcon, ProfileIcon, GlobeIcon } from './Icons.jsx';
 
-/** Only verified (non-null) channels appear. */
-function channels(p) {
-  const rows = [];
-  if (p.phone) rows.push({ label: 'Phone', value: p.phone, href: `tel:${p.phone.replace(/[^\d+]/g, '')}` });
-  if (p.whatsapp) rows.push({ label: 'WhatsApp', value: 'Send a message', href: `https://wa.me/${p.whatsapp.replace(/\D/g, '')}`, ext: true });
-  if (p.email) rows.push({ label: 'Email', value: p.email, href: `mailto:${p.email}` });
-  if (p.linkedin) rows.push({ label: 'LinkedIn', value: 'View profile', href: p.linkedin, ext: true });
-  if (p.website) rows.push({ label: 'Organisation website', value: p.websiteLabel, href: p.website, ext: true });
-  if (p.organisationPhone) rows.push({ label: 'Organisation office', value: p.organisationPhone, href: `tel:${p.organisationPhone.replace(/[^\d+]/g, '')}` });
-  if (p.organisationEmail) rows.push({ label: 'Organisation email', value: p.organisationEmail, href: `mailto:${p.organisationEmail}` });
-  return rows;
+const ICONS = { phone: PhoneIcon, chat: ChatIcon, mail: MailIcon, profile: ProfileIcon, globe: GlobeIcon };
+
+function Row({ r }) {
+  const Icon = ICONS[r.icon];
+  return (
+    <li>
+      <a href={r.href} {...(r.external ? { target: '_blank', rel: 'noopener' } : {})}>
+        <span className="channel__icon"><Icon /></span>
+        <span className="channel__text">
+          <span className="channel__label">{r.label}</span>
+          <span className="channel__value">{r.value}</span>
+        </span>
+        <ArrowIcon className="channel__arrow" width={16} height={16} />
+      </a>
+    </li>
+  );
 }
 
 export default function ContactActions({ vcardHref, saved, onSave, onShare }) {
-  const ref = useReveal();
-  const rows = channels(profile);
+  const rows = [...personalChannels(profile), ...organisationChannels(profile)];
   return (
-    <section className="section contact" id="connect" aria-labelledby="connect-title" ref={ref}>
-      <div className="wrap section__grid">
-        <SectionHead num="03" label="Stay connected" />
-        <div>
-          <h2 className="section__title reveal" id="connect-title">Keep in touch with <em>Matthew.</em></h2>
-          <p className="contact__lead reveal">Save his details to your phone in one tap, or pass this page on to someone who should know about his work.</p>
+    <section className="contact" id="contact" aria-labelledby="contact-title">
+      <div className="wrap contact__grid">
+        <SectionMark num="03" label="Contact" />
+        <div className="contact__intro" data-reveal>
+          <h2 className="contact__title" id="contact-title">Stay in <em>touch.</em></h2>
+          <p>Save Matthew’s details to your phone in one tap, or pass this page on to someone who should meet him.</p>
+        </div>
 
-          <div className="actions reveal">
-            <a
-              className={`action action--primary${saved ? ' is-done' : ''}`}
-              href={vcardHref}
-              download={profile.vcardFileName}
-              onClick={onSave}
-            >
-              <span>
-                <span className="action__title">{saved ? 'Card saved' : 'Save contact'}</span>
-                <span className="action__desc">Adds {profile.fullName} to your phone’s contacts. Works on iPhone and Android.</span>
-              </span>
-              <span className="action__icon" aria-hidden="true">{saved ? <CheckIcon /> : <SaveIcon />}</span>
-            </a>
-            <button type="button" className="action action--secondary" onClick={onShare}>
-              <span>
-                <span className="action__title">Share profile</span>
-                <span className="action__desc">Send a link to this page by message, email or any app.</span>
-              </span>
-              <span className="action__icon" aria-hidden="true"><ShareIcon /></span>
-            </button>
-          </div>
+        <div className="contact__panel" data-reveal>
+          <a
+            className={`save-card${saved ? ' is-done' : ''}`}
+            href={vcardHref}
+            download={profile.vcardFileName}
+            onClick={onSave}
+          >
+            <span className="save-card__top">
+              <span className="save-card__kicker">Contact card</span>
+              <span className="save-card__icon">{saved ? <CheckIcon /> : <SaveIcon />}</span>
+            </span>
+            <span className="save-card__title">{saved ? 'Contact saved' : 'Save contact'}</span>
+            <span className="save-card__desc">Adds {profile.fullName} to your phone’s contacts. Works on iPhone and Android.</span>
+          </a>
+
+          <button type="button" className="share-row" onClick={onShare}>
+            <ShareIcon />
+            <span>Share profile</span>
+            <span className="share-row__hint">Send a link to this page</span>
+          </button>
 
           {rows.length > 0 && (
-            <ul className="links reveal" aria-label="Contact details">
-              {rows.map((r) => (
-                <li key={r.label}>
-                  <a href={r.href} {...(r.ext ? { target: '_blank', rel: 'noopener' } : {})}>
-                    <span className="label">{r.label}</span>
-                    <span className="links__val">{r.value}</span>
-                    <span className="links__arrow" aria-hidden="true"><ArrowIcon /></span>
-                  </a>
-                </li>
-              ))}
+            <ul className="channels" aria-label="Ways to get in touch">
+              {rows.map((r) => <Row key={r.key} r={r} />)}
             </ul>
           )}
         </div>

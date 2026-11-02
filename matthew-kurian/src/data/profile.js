@@ -35,29 +35,48 @@ export const profile = {
   country: 'India',
 
   // ── Words ───────────────────────────────────────────────────
-  // Hero line. Written for the site, not a quotation from Matthew.
+  // Written for the site; none of these are quotations from Matthew.
   heroIntroduction:
-    'Since 1997, working to give children in Goa a safe home, an education and the chance of a real childhood.',
+    'Building opportunities for children and communities to create brighter futures.',
+  heroNote: 'Working with children in Goa since 1997.',
 
-  // "A little about Matthew". Facts from El Shaddai's published
-  // Board of Trustees page (childrescue.net).
+  // About. Facts from El Shaddai's published Board of Trustees page.
   introduction: [
-    'Matthew Kurian came to Goa from Kerala in 1993 to work alongside people recovering from addiction. In 1997 he met Anita Edgar, who was visiting from Devon, and together they set up El Shaddai Charitable Trust.',
-    'What began as a shared conviction, that every child deserves a safe and fulfilling childhood, has grown into decades of care, education and support for vulnerable children, their families and their communities.',
+    'Matthew Kurian is the Co-Founder of El Shaddai Charitable Trust, an organisation he founded with Anita Edgar around a shared vision: giving vulnerable children the chance of a safe and fulfilling childhood.',
+    'Over the years, that vision has grown into a wider effort supporting children, families and communities through care, education and opportunity.',
+  ],
+  // Short chronology shown beside the introduction (all published by El Shaddai).
+  milestones: [
+    { year: '1993', text: 'Moves to Goa from Kerala to work with people recovering from addiction.' },
+    { year: '1997', text: 'Meets Anita Edgar, visiting from Devon. Together they set up El Shaddai Charitable Trust.' },
+    { year: 'Today', text: 'Co-Founder of El Shaddai, based in Goa.' },
   ],
 
-  // Organisation section
+  // Other ventures. Source: Ministry of Corporate Affairs director record,
+  // DIN 02209241 (the same DIN is a director of El Shaddai's foundations).
+  // Names shown without "Private Limited". Confirm with Matthew which
+  // ones he wants listed, and their trading names, before publishing.
+  venturesIntro:
+    'A hotel management graduate, Matthew is also a director of hospitality businesses in Goa.',
+  ventures: [
+    { name: 'Goandream Hospitality', role: 'Director', since: '2005' },
+    { name: 'Schreiber Resorts', role: 'Director', since: '2011' },
+    { name: 'Abigail Resorts', role: 'Director', since: '2016' },
+  ],
+
+  // His work
   organisationSummary:
-    'Together with its team and supporters, El Shaddai Charitable Trust provides care, education and opportunities for children and communities facing difficult circumstances.',
-  organisationVision: 'A childhood for children who have never had one.',
-  organisationFocus: [
-    { title: 'Safe homes', text: 'Residential care and protection for children at risk.' },
-    { title: 'Education', text: 'Schooling and learning that open real opportunities.' },
-    { title: 'Women & families', text: 'Support for mothers and families in hardship.' },
-    { title: 'Children’s rights', text: 'Advocacy for children from the streets and slums.' },
+    'Founded by Matthew Kurian and Anita Edgar, El Shaddai Charitable Trust works to create safe environments, educational opportunities and brighter futures for vulnerable children and communities.',
+  organisationAreas: [
+    { title: 'Children’s homes and shelters', text: 'Safe, caring homes for children who need one.' },
+    { title: 'Education and schools', text: 'Schooling that keeps children learning and opens doors.' },
+    { title: 'Community centres', text: 'Day care and support close to where families live.' },
+    { title: 'Family and community support', text: 'Help for families facing hardship, so children can stay safe.' },
+    { title: 'Women’s empowerment', text: 'Shelter, skills and support for women.' },
   ],
+  organisationVision: 'A childhood for children who have never had one.',
 
-  // ── Contact (verified values only — null hides the row) ─────
+  // ── Contact (verified values only — null hides the action) ──
   phone: null,        // e.g. '+91 98xxx xxxxx'  (Matthew's own number, never the organisation line)
   whatsapp: null,     // international format, digits only, e.g. '9198xxxxxxxx'
   email: null,        // e.g. 'name@childrescue.net'
@@ -71,25 +90,34 @@ export const profile = {
   organisationEmail: null,
 
   // ── Web ─────────────────────────────────────────────────────
-  // The permanent public address of this site, without a trailing
-  // slash, e.g. 'https://matthewkurian.com'. Used for Share, Open
-  // Graph and the contact card. Falls back to the current address.
-  siteUrl: null,
+  // Permanent public address, no trailing slash. Used for Share,
+  // Open Graph and the contact card.
+  siteUrl: 'https://matthew-kurian.vercel.app',
 
-  // Portrait (supplied photograph, cropped 4:5 around Matthew).
-  // public/matthew-kurian-card.jpg is a small copy embedded in the
-  // contact card. A monogram shows if the image ever fails to load.
-  profileImage: '/matthew-kurian.jpg',
+  // ── Portrait ────────────────────────────────────────────────
+  // Tried in order; the first that loads is shown.
+  //  1. The official El Shaddai team photo, saved locally. Download
+  //     it from the link below into public/matthew-kurian-official.webp.
+  //  2. The same official photo, loaded from childrescue.net.
+  //  3. The previously supplied photo.
+  profileImages: [
+    '/matthew-kurian-official.webp',
+    'https://childrescue.net/wp-content/uploads/2026/10/team-matthew-kurian-2026.webp',
+    '/matthew-kurian.jpg',
+  ],
+  profileImageAlt: 'Matthew Kurian',
+  // Vertical focus of the crop (0% top … 100% bottom).
+  profileImageFocus: '25%',
+  // 'ink': black-and-white print toned to the site palette (ink shadows,
+  // parchment highlights), so any photo sits with the design. 'none': original colour.
+  profileImageTone: 'ink',
+  // Small copy embedded in the saved contact card, and the link-preview image.
   profileImageCard: '/matthew-kurian-card.jpg',
-  profileImageFallback: null,
-  profileImageAlt: 'Portrait of Matthew Kurian',
-  // Vertical focus of the crop (0% top … 100% bottom). Nudge if the face sits high or low.
-  profileImageFocus: '22%',
+  ogImage: '/matthew-kurian.jpg',
 
   vcardFileName: 'matthew-kurian.vcf',
 };
 
 export function titleLine(p = profile) {
-  const t = p.showSecondaryTitle && p.secondaryTitle ? `${p.designation} & ${p.secondaryTitle}` : p.designation;
-  return t;
+  return p.showSecondaryTitle && p.secondaryTitle ? `${p.designation} & ${p.secondaryTitle}` : p.designation;
 }

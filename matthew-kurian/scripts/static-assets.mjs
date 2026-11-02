@@ -11,7 +11,7 @@ import { buildVCard } from '../src/lib/vcard.js';
 import { renderHeadTags } from '../src/lib/meta.js';
 
 export function vcardText(root) {
-  const img = path.join(root, 'public', (profile.profileImageCard || profile.profileImage).replace(/^\//, ''));
+  const img = path.join(root, 'public', profile.profileImageCard.replace(/^\//, ''));
   let photoBase64;
   if (fs.existsSync(img)) {
     const buf = fs.readFileSync(img);

@@ -1,31 +1,39 @@
 import { profile } from '../data/profile.js';
-import { useReveal } from '../hooks/useReveal.js';
-import SectionHead from './SectionHead.jsx';
+import SectionMark from './SectionMark.jsx';
 
 export default function Introduction() {
-  const ref = useReveal();
   const [lede, ...rest] = profile.introduction;
   return (
-    <section className="section" id="about" aria-labelledby="about-title" ref={ref}>
-      <div className="wrap section__grid">
-        <SectionHead num="01" label="Introduction" />
-        <div>
-          <h2 className="section__title reveal" id="about-title">A little about <em>Matthew</em></h2>
-          <div className="intro__body">
-            <div className="reveal">
-              <p className="intro__lede">{lede}</p>
-              {rest.map((t) => <p className="intro__para" key={t.slice(0, 20)}>{t}</p>)}
-            </div>
-            <div className="reveal">
-              <ul className="notes" aria-label="At a glance">
-                <li><span className="label">From</span><span className="val">Kerala</span></li>
-                <li><span className="label">In Goa since</span><span className="val">1993</span></li>
-                <li><span className="label">Co-founded</span><span className="val">{profile.organisation}, {profile.organisationFounded}</span></li>
-                <li><span className="label">With</span><span className="val">Anita Edgar</span></li>
-              </ul>
-            </div>
-          </div>
+    <section className="about" id="about" aria-labelledby="about-title">
+      <div className="wrap about__grid">
+        <SectionMark num="01" label="About" />
+        <h2 className="about__title" id="about-title" data-reveal>A little about <em>Matthew.</em></h2>
+        <div className="about__text" data-reveal>
+          <p className="about__lede">{lede}</p>
+          {rest.map((t) => <p key={t.slice(0, 24)}>{t}</p>)}
         </div>
+        <ol className="timeline" aria-label="Milestones" data-reveal>
+          {profile.milestones.map((m) => (
+            <li key={m.year}>
+              <span className="timeline__year">{m.year}</span>
+              <span className="timeline__text">{m.text}</span>
+            </li>
+          ))}
+        </ol>
+        {profile.ventures?.length > 0 && (
+          <div className="ventures" data-reveal>
+            <h3 className="ventures__title">Beyond El Shaddai</h3>
+            <p className="ventures__intro">{profile.venturesIntro}</p>
+            <ul aria-label="Other ventures">
+              {profile.ventures.map((v) => (
+                <li key={v.name}>
+                  <span className="ventures__name">{v.name}</span>
+                  <span className="ventures__meta">{v.role} · since {v.since}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,20 +1,19 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
-/** Adds .is-visible once the element scrolls into view. */
+/**
+ * Fades sections in as they enter the viewport. Content is visible by
+ * default; only elements still below the fold when JS runs are hidden
+ * first, so nothing is ever left invisible.
+ */
 export function useReveal() {
-  const ref = useRef(null);
   useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    if (!('IntersectionObserver' in window)) { el.classList.add('is-visible'); return; }
-    const io = new IntersectionObserver(
-      (entries) => entries.forEach((e) => {
-        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
-      }),
-      { rootMargin: '0px 0px -8% 0px', threshold: 0.08 },
-    );
-    el.querySelectorAll('.reveal').forEach((n) => io.observe(n));
+    if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const els = [...document.querySelectorAll('[data-reveal]')].filter((el) => el.getBoundingClientRect().top > innerHeight * 0.92);
+    els.forEach((el) => el.classList.add('is-pending'));
+    const io = new IntersectionObserver((entries) => entries.forEach((e) => {
+      if (e.isIntersecting) { e.target.classList.add('is-in'); e.target.classList.remove('is-pending'); io.unobserve(e.target); }
+    }), { rootMargin: '0px 0px -10% 0px' });
+    els.forEach((el) => io.observe(el));
     return () => io.disconnect();
   }, []);
-  return ref;
 }

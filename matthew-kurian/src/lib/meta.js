@@ -7,7 +7,7 @@ export function renderHeadTags(p) {
   const title = `${p.fullName} — ${titleLine(p)}, ${p.organisation}`;
   const description = `${p.fullName}, ${titleLine(p)} of ${p.organisation}, ${p.location}. ${p.heroIntroduction}`;
   const base = p.siteUrl ? p.siteUrl.replace(/\/$/, '') : '';
-  const image = base && p.profileImage ? `${base}${p.profileImage}` : '';
+  const image = base && p.ogImage ? `${base}${p.ogImage}` : '';
 
   const tags = [
     `<title>${attr(title)}</title>`,
