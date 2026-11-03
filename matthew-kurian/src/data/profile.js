@@ -40,24 +40,37 @@ export const profile = {
     'Building opportunities for children and communities to create brighter futures.',
   heroNote: 'Working with children in Goa since 1997.',
 
-  // About. Facts from El Shaddai's published Board of Trustees page.
+  // About. Sources: El Shaddai Board of Trustees page (childrescue.net),
+  // Incredible Goa (22 Sep 2018), El Shaddai project documents,
+  // childrescue.net news post on the Deepika award, and the Ministry of
+  // Corporate Affairs director record (DIN 02209241).
   introduction: [
-    'Matthew Kurian is the Co-Founder of El Shaddai Charitable Trust, an organisation he founded with Anita Edgar around a shared vision: giving vulnerable children the chance of a safe and fulfilling childhood.',
-    'Over the years, that vision has grown into a wider effort supporting children, families and communities through care, education and opportunity.',
+    'Matthew Kurian has spent more than three decades working alongside people on the margins in Goa, first with men recovering from addiction, then with children and families in the state’s poorest communities.',
+    'In 1997 he and Anita Edgar set up El Shaddai Charitable Trust around a shared vision: giving vulnerable children the chance of a safe and fulfilling childhood. That vision has grown into care, schooling and support for children, families and whole communities.',
   ],
-  // Short chronology shown beside the introduction (all published by El Shaddai).
+  facts: [
+    { label: 'From', value: 'Kerala' },
+    { label: 'Based in', value: 'Goa, since 1993' },
+    { label: 'Studied', value: 'Hotel management' },
+    { label: 'Co-founded', value: 'El Shaddai Charitable Trust, 1997' },
+  ],
   milestones: [
-    { year: '1993', text: 'Moves to Goa from Kerala to work with people recovering from addiction.' },
-    { year: '1997', text: 'Meets Anita Edgar, visiting from Devon. Together they set up El Shaddai Charitable Trust.' },
-    { year: 'Today', text: 'Co-Founder of El Shaddai, based in Goa.' },
+    { year: '1993', title: 'Arrives in Goa', text: 'Moves from Kerala to work with people recovering from addiction, at IPHB, Kripa and a de-addiction centre in Mapusa.' },
+    { year: '1990s', title: 'A first school', text: 'Works with Lamani families in Goa and Karnataka and starts a small school for their children.' },
+    { year: '1997', title: 'El Shaddai', text: 'Meets Anita Edgar, visiting from Devon. Together they set up El Shaddai Charitable Trust.' },
+    { year: '2008', title: 'National recognition', text: 'Receives the National Award for Child Welfare from the Government of India.' },
+    { year: 'Today', title: 'Still in Goa', text: 'Co-Founder of El Shaddai and a director of hospitality businesses in Goa.' },
+  ],
+  recognition: [
+    { year: '2008', title: 'National Award for Child Welfare', by: 'Government of India' },
+    { year: '2012', title: 'Excellence Award for National Social Activity', by: 'Global Achievers Foundation' },
+    { year: '2023', title: 'Manava Shreshta Award', by: 'Deepika, Kerala' },
   ],
 
   // Other ventures. Source: Ministry of Corporate Affairs director record,
   // DIN 02209241 (the same DIN is a director of El Shaddai's foundations).
   // Names shown without "Private Limited". Confirm with Matthew which
   // ones he wants listed, and their trading names, before publishing.
-  venturesIntro:
-    'A hotel management graduate, Matthew is also a director of hospitality businesses in Goa.',
   ventures: [
     { name: 'Goandream Hospitality', role: 'Director', since: '2005' },
     { name: 'Schreiber Resorts', role: 'Director', since: '2011' },
