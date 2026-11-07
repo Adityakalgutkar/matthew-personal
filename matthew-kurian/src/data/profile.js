@@ -36,8 +36,10 @@ export const profile = {
 
   // ── Words ───────────────────────────────────────────────────
   // Written for the site; none of these are quotations from Matthew.
+  // heroIntroduction is Matthew's own description of himself (his Facebook
+  // intro, supplied by the office/developer, Nov 2026).
   heroIntroduction:
-    'Building opportunities for children and communities to create brighter futures.',
+    'A pastor and a social activist. My passion is helping everyone to discover their purpose in life.',
   heroNote: 'Working with children in Goa since 1997.',
 
   // About. Sources: El Shaddai Board of Trustees page (childrescue.net),
@@ -51,7 +53,6 @@ export const profile = {
   facts: [
     { label: 'From', value: 'Kerala' },
     { label: 'Based in', value: 'Goa, since 1993' },
-    { label: 'Studied', value: 'Hotel management' },
     { label: 'Co-founded', value: 'El Shaddai Charitable Trust, 1997' },
     { label: 'Founded', value: 'Style BU, Mapusa' },
     { label: 'Pastor', value: 'Faith Community Church, Mapusa' },
@@ -100,11 +101,11 @@ export const profile = {
       period: 'Kerala',
       body: [
         'After high school he followed that question into the seminary. It turned out not to be his path, and he left.',
-        'His formal studies came a little later. In his early twenties he went back to college and completed a degree in hotel management, a training he would return to years later in business.',
+        'His formal studies came a little later, when he went back to college in his early twenties.',
       ],
       points: [
         { when: 'After school', what: 'Enters the seminary, then leaves' },
-        { when: 'Early 20s', what: 'Graduates in hotel management' },
+        { when: 'Early 20s', what: 'Returns to college' },
       ],
     },
     {
@@ -124,6 +125,10 @@ export const profile = {
         show: false,
         text: 'Matthew has spoken openly about his own struggle with drug addiction, which lasted more than eight years. At around 22 he left that life behind, returned to college and found his faith again, an experience that later drew him to stand alongside others facing addiction.',
       },
+      media: [
+        { src: '/life/matthew-julia-2012.jpg', w: 933, h: 1400, alt: 'Matthew Kurian with Julia', caption: 'With Julia, May 2012.' },
+        { src: '/life/matthew-julia-anita-2012.jpg', w: 1400, h: 933, alt: 'Matthew Kurian with Julia and Anita Edgar', caption: 'With Julia and Anita Edgar, May 2012.' },
+      ],
     },
     {
       id: 'professional-journey',
@@ -132,7 +137,7 @@ export const profile = {
       body: [
         'Matthew’s first work in Goa was in addiction recovery, at a time when few organisations in the state worked in the field. He worked with IPHB, then in Altinho and now at Bambolim beside Goa Medical College, with Kripa’s alcohol centre for men, and at a de-addiction centre in Mapusa run under Asilo Hospital.',
         'Alongside his life’s work with El Shaddai, he has built businesses of his own, and has been described as a serial entrepreneur. A love of fashion, and frustration with ill-fitting ready-made wear, led him to open a bespoke tailoring store, first in Calangute and then in Mapusa. It became Style BU, short for “Be Unique”: made-to-measure clothing for everyday wear and weddings, with clients ranging from film stars to five-star hotels ordering uniforms. By 2022 it had employed around 50 people over roughly a decade and staged two fashion shows, and Matthew spoke of building a fashion industry in Goa that develops young designers and models.',
-        'He has also put his hotel management training to use. Company records list him as a director of three hospitality companies in Goa.',
+        'Company records also list him as a director of three hospitality companies in Goa.',
       ],
       ledger: 'ventures',
     },
@@ -142,14 +147,14 @@ export const profile = {
       period: '1997 onwards',
       body: [
         'As Co-Founder and Managing Trustee, Matthew has helped steer El Shaddai from a single small home in Goa to work across Kerala, Karnataka and Tamil Nadu, supported by partner offices that opened in the United Kingdom in 2009 and Germany in 2010. He has travelled across India and overseas to speak for child welfare, and has championed non-formal education as a way to reach children that ordinary schooling leaves behind.',
-        'In 1999 he and Anita also set up El Shaddai Charitable Trust in the United Kingdom, a registered charity created solely to support the work in Goa.',
+        'In 1999 he and Anita also set up El Shaddai Charitable Trust in the United Kingdom, a registered charity created solely to support the work in Goa. Closer to home, El Shaddai runs the annual Goa Marathon to promote fitness and raise funds for its children’s programmes; Matthew flagged off the 2025 race at Miramar.',
         'He is also a pastor. Known to many simply as Pastor Matthew, he is listed first among the pastors of Faith Community Church in Mapusa and has led the church’s Sunday prayer meetings in Calangute. Working with the UK charity Coaching For Christ, he helped train local coaches so the church could run a football ministry for children in the area. One young man who grew up in El Shaddai’s care, from kindergarten to Class 10, has described Pastor Matthew and Anita as the parents he looked up to.',
       ],
       points: [
         { when: '1999', what: 'El Shaddai UK registered as a charity in England' },
         { when: '2009', what: 'El Shaddai UK office opens' },
         { when: '2010', what: 'El Shaddai Germany founded' },
-        { when: '2025', what: 'Flags off El Shaddai’s Goa Marathon at Miramar' },
+        { when: '2025', what: 'Flags off the Goa Marathon at Miramar, 9 February' },
       ],
       media: [
         { src: '/life/ps-matthew-2010.jpg', w: 735, h: 404, alt: 'Matthew Kurian receiving flowers from a child on stage', caption: 'Pastor Matthew at an event, April 2010.' },
@@ -236,9 +241,15 @@ export const profile = {
   phone: null,        // e.g. '+91 98xxx xxxxx'  (Matthew's own number, never the organisation line)
   whatsapp: null,     // international format, digits only, e.g. '9198xxxxxxxx'
   email: null,        // e.g. 'name@childrescue.net'
-  linkedin: null,     // full URL
+  linkedin: 'https://www.linkedin.com/in/goanpastor/',
+  facebook: null,     // full URL of Matthew's Facebook profile
   website: 'https://childrescue.net/',
   websiteLabel: 'childrescue.net',
+
+  // Church. Shown in Contact under "Faith Community Church".
+  churchWebsite: 'https://churchingoa.com/',
+  churchWebsiteLabel: 'churchingoa.com',
+  churchYouTube: 'https://www.youtube.com/@churchingoa',
 
   // Optional organisation contact. Always shown labelled as an
   // organisation contact, never as Matthew's own.

@@ -79,6 +79,10 @@ export function buildVCard(p, opts = {}) {
     L.push(`item5.URL:${p.linkedin}`);
     L.push('item5.X-ABLabel:LinkedIn');
   }
+  if (p.facebook) {
+    L.push(`item6.URL:${p.facebook}`);
+    L.push('item6.X-ABLabel:Facebook');
+  }
 
   if (p.region || p.country) {
     L.push(`ADR;TYPE=WORK;CHARSET=UTF-8:;;;;${esc(p.region || '')};;${esc(p.country || '')}`);
