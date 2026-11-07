@@ -22,7 +22,7 @@ Every statement on the site comes from one of the sources below. Nothing has bee
 | S14 | El Shaddai, "Goa Marathon 2025: A Run for a Cause": https://childrescue.net/goa-marathon-2025-a-run-for-a-cause/ | Flagged off the Goa Marathon, 9 Feb 2025, Miramar |
 | S15 | Faith Community Church, home page: https://churchingoa.com/ | Listed first among six pastors; church at Altinho, Mapusa; speaker for messages posted July 2026 |
 | S16 | Matthew's Facebook intro, supplied by the developer (Nov 2026): "A pastor and a social activist. My passion is helping everyone to discover their purpose in life." | Hero line, in his own words. Profile: https://www.facebook.com/Goanpastor/ (added to Contact and the contact card) |
-| S17 | Faith Community Church YouTube: https://www.youtube.com/@churchingoa | Link to Sunday services and sermons in Contact |
+| S17 | Faith Community Church YouTube channel, @churchingoa. (with the trailing dot): https://www.youtube.com/@churchingoa. | Link in Contact. Channel description: church started in 1993 with eight members; planted churches in several Goan cities; mission churches in Karnataka and Maharashtra; associated with the All Goa Pastors Association; part of Worldwide Assemblies of God since 2003; "Pastor Matthew and Julia and their team". Note: @churchingoa without the dot is a different channel |
 | S9 | El Shaddai project document (proposal .docx on childrescue.net) | Excellence Award for National Social Activity, Global Achievers Foundation, 2012. Read earlier; could not be re-opened for this pass |
 
 ## Photos and videos on the site
@@ -52,6 +52,7 @@ Not used yet:
 - **When he met Anita Edgar:** 1996 (El Shaddai UK) or 1997 (El Shaddai trustees page). The site avoids giving a year for the meeting.
 - **Pastor already in 1996?** El Shaddai UK says he was pastor of a local church when they met. Other sources date his ministry later. Not stated on the site until confirmed.
 - **Founder or co-founder:** The site now calls him Founder (developer's decision, 7 Nov 2026). El Shaddai's trustees page and most sources say he co-founded it with Anita Edgar; the 2025 marathon post calls him founder. Anita Edgar is still named as co-founder in the text.
+- **Did Matthew found Faith Community Church?** The church started in 1993, the year he moved to Goa, and he and Julia lead its team. No source says he founded it. Confirm before saying so.
 - **Church name:** Coaching For Christ calls it "El Shaddai Ministries"; the church site says Faith Community Church. Are these the same church?
 - **Education on LinkedIn:** lists "Ephraim moore university" with dates 1993 to 2032, plus an unnamed institution 1989 to 1993. Not used on the site. What did he study, and where?
 - **Style BU today:** is it still trading, and is the employee figure (around 50 over ten years, from 2022) still right?

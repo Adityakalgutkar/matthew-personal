@@ -149,7 +149,7 @@ export const profile = {
       body: [
         'As Founder and Managing Trustee, Matthew has helped steer El Shaddai from a single small home in Goa to work across Kerala, Karnataka and Tamil Nadu, supported by partner offices that opened in the United Kingdom in 2009 and Germany in 2010. He has travelled across India and overseas to speak for child welfare, and has championed non-formal education as a way to reach children that ordinary schooling leaves behind.',
         'In 1999 he and Anita also set up El Shaddai Charitable Trust in the United Kingdom, a registered charity created solely to support the work in Goa. Closer to home, El Shaddai runs the annual Goa Marathon to promote fitness and raise funds for its children’s programmes; Matthew flagged off the 2025 race at Miramar.',
-        'He is also a pastor. Known to many simply as Pastor Matthew, he is listed first among the pastors of Faith Community Church in Mapusa and has led the church’s Sunday prayer meetings in Calangute. Working with the UK charity Coaching For Christ, he helped train local coaches so the church could run a football ministry for children in the area. One young man who grew up in El Shaddai’s care, from kindergarten to Class 10, has described Pastor Matthew and Anita as the parents he looked up to.',
+        'He is also a pastor. Known to many simply as Pastor Matthew, he is listed first among the pastors of Faith Community Church in Mapusa and has led the church’s Sunday prayer meetings in Calangute. The church began in 1993 with eight members and has since planted churches in several Goan towns, with mission churches in Karnataka and Maharashtra; it has been part of the Worldwide Assemblies of God movement since 2003. Matthew, his wife Julia and their team there focus on helping people reach their God-given potential. Working with the UK charity Coaching For Christ, he helped train local coaches so the church could run a football ministry for children in the area. One young man who grew up in El Shaddai’s care, from kindergarten to Class 10, has described Pastor Matthew and Anita as the parents he looked up to.',
       ],
       points: [
         { when: '1999', what: 'El Shaddai UK registered as a charity in England' },
@@ -250,7 +250,7 @@ export const profile = {
   // Church. Shown in Contact under "Faith Community Church".
   churchWebsite: 'https://churchingoa.com/',
   churchWebsiteLabel: 'churchingoa.com',
-  churchYouTube: 'https://www.youtube.com/@churchingoa',
+  churchYouTube: 'https://www.youtube.com/@churchingoa.',
 
   // Optional organisation contact. Always shown labelled as an
   // organisation contact, never as Matthew's own.
