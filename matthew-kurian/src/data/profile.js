@@ -20,10 +20,11 @@ export const profile = {
   fullName: 'Matthew Kurian',
   monogram: 'MK',
 
-  // Published by El Shaddai as "Co-founder and Managing Trustee".
-  // "Co-Founder" is shown by default. Set showSecondaryTitle to true
+  // El Shaddai's trustees page says "Co-founder and Managing Trustee";
+  // shown as "Founder" at the developer's request (7 Nov 2026).
+  // "Founder" is shown by default. Set showSecondaryTitle to true
   // once Matthew confirms he would like "Managing Trustee" shown too.
-  designation: 'Co-Founder',
+  designation: 'Founder',
   secondaryTitle: 'Managing Trustee',
   showSecondaryTitle: false,
 
@@ -48,12 +49,12 @@ export const profile = {
   // Corporate Affairs director record (DIN 02209241).
   introduction: [
     'Matthew Kurian is a social worker, pastor and entrepreneur who has made Goa his home since 1993. He has spent more than three decades working alongside people on the margins, first with men recovering from addiction, then with children and families in the state’s poorest communities.',
-    'In 1997 he and Anita Edgar founded El Shaddai Charitable Trust around a shared vision: giving vulnerable children the chance of a safe and fulfilling childhood. As its Co-Founder and Managing Trustee, he has seen that vision grow into homes, schools and community programmes across four Indian states. Alongside it, he serves as a pastor in Mapusa and is the founder of Style BU, a bespoke clothing label.',
+    'In 1997 he and Anita Edgar founded El Shaddai Charitable Trust around a shared vision: giving vulnerable children the chance of a safe and fulfilling childhood. As its Founder and Managing Trustee, he has seen that vision grow into homes, schools and community programmes across four Indian states. Alongside it, he serves as a pastor in Mapusa and is the founder of Style BU, a bespoke clothing label.',
   ],
   facts: [
     { label: 'From', value: 'Kerala' },
     { label: 'Based in', value: 'Goa, since 1993' },
-    { label: 'Co-founded', value: 'El Shaddai Charitable Trust, 1997' },
+    { label: 'Founded', value: 'El Shaddai Charitable Trust, 1997' },
     { label: 'Founded', value: 'Style BU, Mapusa' },
     { label: 'Pastor', value: 'Faith Community Church, Mapusa' },
   ],
@@ -146,7 +147,7 @@ export const profile = {
       title: 'Leadership & ministry',
       period: '1997 onwards',
       body: [
-        'As Co-Founder and Managing Trustee, Matthew has helped steer El Shaddai from a single small home in Goa to work across Kerala, Karnataka and Tamil Nadu, supported by partner offices that opened in the United Kingdom in 2009 and Germany in 2010. He has travelled across India and overseas to speak for child welfare, and has championed non-formal education as a way to reach children that ordinary schooling leaves behind.',
+        'As Founder and Managing Trustee, Matthew has helped steer El Shaddai from a single small home in Goa to work across Kerala, Karnataka and Tamil Nadu, supported by partner offices that opened in the United Kingdom in 2009 and Germany in 2010. He has travelled across India and overseas to speak for child welfare, and has championed non-formal education as a way to reach children that ordinary schooling leaves behind.',
         'In 1999 he and Anita also set up El Shaddai Charitable Trust in the United Kingdom, a registered charity created solely to support the work in Goa. Closer to home, El Shaddai runs the annual Goa Marathon to promote fitness and raise funds for its children’s programmes; Matthew flagged off the 2025 race at Miramar.',
         'He is also a pastor. Known to many simply as Pastor Matthew, he is listed first among the pastors of Faith Community Church in Mapusa and has led the church’s Sunday prayer meetings in Calangute. Working with the UK charity Coaching For Christ, he helped train local coaches so the church could run a football ministry for children in the area. One young man who grew up in El Shaddai’s care, from kindergarten to Class 10, has described Pastor Matthew and Anita as the parents he looked up to.',
       ],
@@ -199,7 +200,7 @@ export const profile = {
       title: 'Present day',
       period: 'Today',
       body: [
-        'Nearly three decades after founding El Shaddai, Matthew remains its Co-Founder and Managing Trustee, working from the Trust’s base in Assagao, North Goa. He continues to serve as a pastor at Faith Community Church in Mapusa, runs Style BU, and is a director of hospitality businesses in Goa.',
+        'Nearly three decades after founding El Shaddai, Matthew remains its Founder and Managing Trustee, working from the Trust’s base in Assagao, North Goa. He continues to serve as a pastor at Faith Community Church in Mapusa, runs Style BU, and is a director of hospitality businesses in Goa.',
         'Goa, the place he came to in 1993 to help others rebuild their lives, has been his home ever since.',
       ],
       media: [

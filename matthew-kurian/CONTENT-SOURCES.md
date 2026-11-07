@@ -51,7 +51,7 @@ Not used yet:
 ## Conflicts and unclear points found in research
 - **When he met Anita Edgar:** 1996 (El Shaddai UK) or 1997 (El Shaddai trustees page). The site avoids giving a year for the meeting.
 - **Pastor already in 1996?** El Shaddai UK says he was pastor of a local church when they met. Other sources date his ministry later. Not stated on the site until confirmed.
-- **Founder or co-founder:** Some pages call him "founder" of El Shaddai. The site uses Co-Founder, as the trustees page does.
+- **Founder or co-founder:** The site now calls him Founder (developer's decision, 7 Nov 2026). El Shaddai's trustees page and most sources say he co-founded it with Anita Edgar; the 2025 marathon post calls him founder. Anita Edgar is still named as co-founder in the text.
 - **Church name:** Coaching For Christ calls it "El Shaddai Ministries"; the church site says Faith Community Church. Are these the same church?
 - **Education on LinkedIn:** lists "Ephraim moore university" with dates 1993 to 2032, plus an unnamed institution 1989 to 1993. Not used on the site. What did he study, and where?
 - **Style BU today:** is it still trading, and is the employee figure (around 50 over ten years, from 2022) still right?
