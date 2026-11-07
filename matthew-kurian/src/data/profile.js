@@ -54,17 +54,116 @@ export const profile = {
     { label: 'Studied', value: 'Hotel management' },
     { label: 'Co-founded', value: 'El Shaddai Charitable Trust, 1997' },
   ],
-  milestones: [
-    { year: '1993', title: 'Arrives in Goa', text: 'Moves from Kerala to work with people recovering from addiction, at IPHB, Kripa and a de-addiction centre in Mapusa.' },
-    { year: '1990s', title: 'A first school', text: 'Works with Lamani families in Goa and Karnataka and starts a small school for their children.' },
-    { year: '1997', title: 'El Shaddai', text: 'Meets Anita Edgar, visiting from Devon. Together they set up El Shaddai Charitable Trust.' },
-    { year: '2008', title: 'National recognition', text: 'Receives the National Award for Child Welfare from the Government of India.' },
-    { year: 'Today', title: 'Still in Goa', text: 'Co-Founder of El Shaddai and a director of hospitality businesses in Goa.' },
+  // ── His life, in chapters ──────────────────────────────────
+  // Every statement below comes from a published source (listed in
+  // CONTENT-SOURCES.md). Nothing is invented. Items Matthew still needs
+  // to confirm are listed in that file too.
+  //
+  //  body    paragraphs of story text
+  //  points  short dated milestones shown beside the story
+  //  ledger  'recognition' or 'ventures' shows that list in the chapter
+  //  private optional paragraph that is NOT shown unless `show` is true.
+  //          Only switch it on once Matthew has said he wants it public.
+  chapters: [
+    {
+      id: 'early-life',
+      title: 'Early life & childhood',
+      period: 'Kerala',
+      body: [
+        'Matthew grew up in Kerala, in a Catholic family. When a cousin went on to become a Franciscan priest, the young Matthew began to wonder whether the same calling might be meant for him.',
+      ],
+    },
+    {
+      id: 'education',
+      title: 'Education',
+      period: 'Kerala',
+      body: [
+        'After high school he followed that question into the seminary. It turned out not to be his path, and he left.',
+        'His formal studies came a little later. In his early twenties he went back to college and completed a degree in hotel management, a training he would return to years later in business.',
+      ],
+      points: [
+        { when: 'After school', what: 'Enters the seminary, then leaves' },
+        { when: 'Early 20s', what: 'Graduates in hotel management' },
+      ],
+    },
+    {
+      id: 'personal-journey',
+      title: 'Personal journey',
+      period: 'The turning points',
+      body: [
+        'Leaving the seminary began a long season of questioning. Matthew drifted away from the church, and for a time called himself an atheist, convinced that religion was too often used to control people.',
+        'At around 22, a charismatic prayer meeting led by the Goan priest Fr. Jeno Rodrigues changed that. He came away with his faith in God restored, a faith he has lived out ever since, though outside the church he grew up in.',
+        'In 1993 that renewed sense of purpose took him from Kerala to Goa, with one clear aim: to work with people whose lives had been taken over by drugs and alcohol.',
+      ],
+      points: [
+        { when: 'Around 22', what: 'Faith renewed' },
+        { when: '1993', what: 'Moves from Kerala to Goa' },
+      ],
+      private: {
+        show: false,
+        text: 'Matthew has spoken openly about his own struggle with drug addiction, which lasted more than eight years. At around 22 he left that life behind, returned to college and found his faith again, an experience that later drew him to stand alongside others facing addiction.',
+      },
+    },
+    {
+      id: 'professional-journey',
+      title: 'Professional journey',
+      period: '1993 onwards',
+      body: [
+        'Matthew’s first work in Goa was in addiction recovery, at a time when few organisations in the state worked in the field. He worked with IPHB, then in Altinho and now at Bambolim beside Goa Medical College, with Kripa’s alcohol centre for men, and at a de-addiction centre in Mapusa run under Asilo Hospital.',
+        'Alongside his life’s work with El Shaddai, he has put his hotel management training to use in business. Company records list him as a director of three hospitality companies in Goa.',
+      ],
+      ledger: 'ventures',
+    },
+    {
+      id: 'leadership-ministry',
+      title: 'Leadership & ministry',
+      period: '1997 onwards',
+      body: [
+        'As Co-Founder and Managing Trustee, Matthew has helped steer El Shaddai from a single small home in Goa to work across Kerala, Karnataka and Tamil Nadu, supported by partner offices that opened in the United Kingdom in 2009 and Germany in 2010. He has travelled across India and overseas to speak for child welfare, and has championed non-formal education as a way to reach children that ordinary schooling leaves behind.',
+        'He is also a pastor. Known to many simply as Pastor Matthew, he serves on the ministering team of Faith Community Church in Mapusa and has led the church’s Sunday prayer meetings in Calangute. One young man who grew up in El Shaddai’s care, from kindergarten to Class 10, has described Pastor Matthew and Anita as the parents he looked up to.',
+      ],
+      points: [
+        { when: '2009', what: 'El Shaddai UK office opens' },
+        { when: '2010', what: 'El Shaddai Germany founded' },
+      ],
+    },
+    {
+      id: 'community',
+      title: 'Community & social contributions',
+      period: 'From the 1990s',
+      body: [
+        'Matthew’s work with children began among the Lamani community, migrant families from Karnataka living in the slums of Karaswada and Sinquerim. He came to know the families, later visited their home villages in Karnataka, ran health camps, taught hygiene, clean water, prenatal care and the value of schooling, and went to government offices on their behalf for the basics they lacked.',
+        'Believing lasting change would come through the children, he started a small school with the community’s help, teaching reading and numbers. In 1997, with Anita Edgar, he set up El Shaddai Charitable Trust and its first children’s home, rescuing 15 children that year. Day and night shelters followed, along with the Manna Meals on Wheels feeding programme in Mapusa, Margao and Vasco, and support for women.',
+      ],
+      points: [
+        { when: '1997', what: 'First home opens, 15 children' },
+        { when: '1999', what: 'Shanti Niketan, the first school, opens in Saligao with over 100 children' },
+        { when: 'Today', what: 'Over 70,000 children educated, according to El Shaddai' },
+      ],
+    },
+    {
+      id: 'achievements',
+      title: 'Achievements & milestones',
+      period: 'Recognition',
+      body: [
+        'Matthew’s work has been recognised nationally and in his home state of Kerala. Under his leadership El Shaddai marked 25 years in 2022, and has itself received the Giving Economy Changemakers Award (2022) and the IIHM award for Outstanding Contribution to the Development of Education in India (2023).',
+      ],
+      ledger: 'recognition',
+    },
+    {
+      id: 'present-day',
+      title: 'Present day',
+      period: 'Today',
+      body: [
+        'Nearly three decades after founding El Shaddai, Matthew remains its Co-Founder and Managing Trustee, working from the Trust’s base in Assagao, North Goa. He continues to serve as a pastor at Faith Community Church in Mapusa and as a director of hospitality businesses in Goa.',
+        'Goa, the place he came to in 1993 to help others rebuild their lives, has been his home ever since.',
+      ],
+    },
   ],
   recognition: [
-    { year: '2008', title: 'National Award for Child Welfare', by: 'Government of India' },
+    { year: '2008', title: 'National Award for Child Welfare', by: 'Government of India, presented in New Delhi' },
     { year: '2012', title: 'Excellence Award for National Social Activity', by: 'Global Achievers Foundation' },
-    { year: '2023', title: 'Manava Shreshta Award', by: 'Deepika, Kerala' },
+    { year: '2023', title: 'Deepika Maanava Shresta Award', by: 'Deepika, Kerala' },
   ],
 
   // Other ventures. Source: Ministry of Corporate Affairs director record,
