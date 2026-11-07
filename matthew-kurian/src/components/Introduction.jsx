@@ -4,7 +4,7 @@ import SectionMark from './SectionMark.jsx';
 function Ledger({ kind }) {
   const rows = kind === 'recognition'
     ? (profile.recognition || []).map((r) => ({ key: r.title, year: r.year, name: r.title, meta: r.by }))
-    : (profile.ventures || []).map((v) => ({ key: v.name, year: v.since, name: v.name, meta: `${v.role}, since ${v.since}` }));
+    : (profile.ventures || []).map((v) => ({ key: v.name, year: v.since || '', name: v.name, meta: [v.role, v.note, v.since && `since ${v.since}`].filter(Boolean).join(', ') }));
   if (!rows.length) return null;
   return (
     <ul className="ledger chapter__ledger">
@@ -61,6 +61,31 @@ export default function Introduction() {
           <p className="about__lede">{lede}</p>
           {rest.map((t) => <p key={t.slice(0, 24)}>{t}</p>)}
         </div>
+
+        {profile.focus?.length > 0 && (
+          <div className="focus" data-reveal>
+            <h3 className="sub-label">Areas of focus</h3>
+            <ul className="focus__list">
+              {profile.focus.map((f) => (
+                <li key={f.title}>
+                  <span className="focus__title">{f.title}</span>
+                  <span className="focus__text">{f.text}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {profile.quotes && (
+          <div className="voices" data-reveal>
+            {['own', 'said'].filter((k) => profile.quotes[k]).map((k) => (
+              <figure className={`voice voice--${k}`} key={k}>
+                <blockquote>“{profile.quotes[k].text}”</blockquote>
+                <figcaption>{profile.quotes[k].source}</figcaption>
+              </figure>
+            ))}
+          </div>
+        )}
 
         <div className="chapters">
           <h3 className="sub-label chapters__label" data-reveal>His life, in chapters</h3>

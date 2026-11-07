@@ -45,15 +45,34 @@ export const profile = {
   // childrescue.net news post on the Deepika award, and the Ministry of
   // Corporate Affairs director record (DIN 02209241).
   introduction: [
-    'Matthew Kurian has spent more than three decades working alongside people on the margins in Goa, first with men recovering from addiction, then with children and families in the state’s poorest communities.',
-    'In 1997 he and Anita Edgar set up El Shaddai Charitable Trust around a shared vision: giving vulnerable children the chance of a safe and fulfilling childhood. That vision has grown into care, schooling and support for children, families and whole communities.',
+    'Matthew Kurian is a social worker, pastor and entrepreneur who has made Goa his home since 1993. He has spent more than three decades working alongside people on the margins, first with men recovering from addiction, then with children and families in the state’s poorest communities.',
+    'In 1997 he and Anita Edgar founded El Shaddai Charitable Trust around a shared vision: giving vulnerable children the chance of a safe and fulfilling childhood. As its Co-Founder and Managing Trustee, he has seen that vision grow into homes, schools and community programmes across four Indian states. Alongside it, he serves as a pastor in Mapusa and is the founder of Style BU, a bespoke clothing label.',
   ],
   facts: [
     { label: 'From', value: 'Kerala' },
     { label: 'Based in', value: 'Goa, since 1993' },
     { label: 'Studied', value: 'Hotel management' },
     { label: 'Co-founded', value: 'El Shaddai Charitable Trust, 1997' },
+    { label: 'Founded', value: 'Style BU, Mapusa' },
+    { label: 'Pastor', value: 'Faith Community Church, Mapusa' },
   ],
+
+  // Areas of focus, drawn from the chapters below (no new claims).
+  focus: [
+    { title: 'Child welfare', text: 'Rescue, care and homes for children living on the streets and in slums.' },
+    { title: 'Education', text: 'Schooling for children outside the system, including non-formal education.' },
+    { title: 'Addiction recovery', text: 'His first work in Goa, with people recovering from drugs and alcohol.' },
+    { title: 'Ministry', text: 'Pastoral care, prayer meetings and a football ministry for young people.' },
+    { title: 'Enterprise', text: 'Bespoke fashion and hospitality businesses in Goa.' },
+  ],
+
+  // Quotations, each from a named public source (see CONTENT-SOURCES.md).
+  // own: Matthew's own words, from his LinkedIn profile.
+  // said: a public LinkedIn recommendation from a colleague.
+  quotes: {
+    own: { text: 'I am passionate in developing people. Helping people to come to their full potential in life.', source: 'Matthew Kurian, on LinkedIn' },
+    said: { text: 'He’s firmly rooted in his core reason for starting El Shaddai – the street children. He truly cares for them and it shows.', source: 'Gasper D’Souza, colleague, on LinkedIn' },
+  },
   // ── His life, in chapters ──────────────────────────────────
   // Every statement below comes from a published source (listed in
   // CONTENT-SOURCES.md). Nothing is invented. Items Matthew still needs
@@ -112,7 +131,8 @@ export const profile = {
       period: '1993 onwards',
       body: [
         'Matthew’s first work in Goa was in addiction recovery, at a time when few organisations in the state worked in the field. He worked with IPHB, then in Altinho and now at Bambolim beside Goa Medical College, with Kripa’s alcohol centre for men, and at a de-addiction centre in Mapusa run under Asilo Hospital.',
-        'Alongside his life’s work with El Shaddai, he has put his hotel management training to use in business. Company records list him as a director of three hospitality companies in Goa.',
+        'Alongside his life’s work with El Shaddai, he has built businesses of his own, and has been described as a serial entrepreneur. A love of fashion, and frustration with ill-fitting ready-made wear, led him to open a bespoke tailoring store, first in Calangute and then in Mapusa. It became Style BU, short for “Be Unique”: made-to-measure clothing for everyday wear and weddings, with clients ranging from film stars to five-star hotels ordering uniforms. By 2022 it had employed around 50 people over roughly a decade and staged two fashion shows, and Matthew spoke of building a fashion industry in Goa that develops young designers and models.',
+        'He has also put his hotel management training to use. Company records list him as a director of three hospitality companies in Goa.',
       ],
       ledger: 'ventures',
     },
@@ -122,11 +142,14 @@ export const profile = {
       period: '1997 onwards',
       body: [
         'As Co-Founder and Managing Trustee, Matthew has helped steer El Shaddai from a single small home in Goa to work across Kerala, Karnataka and Tamil Nadu, supported by partner offices that opened in the United Kingdom in 2009 and Germany in 2010. He has travelled across India and overseas to speak for child welfare, and has championed non-formal education as a way to reach children that ordinary schooling leaves behind.',
-        'He is also a pastor. Known to many simply as Pastor Matthew, he serves on the ministering team of Faith Community Church in Mapusa and has led the church’s Sunday prayer meetings in Calangute. One young man who grew up in El Shaddai’s care, from kindergarten to Class 10, has described Pastor Matthew and Anita as the parents he looked up to.',
+        'In 1999 he and Anita also set up El Shaddai Charitable Trust in the United Kingdom, a registered charity created solely to support the work in Goa.',
+        'He is also a pastor. Known to many simply as Pastor Matthew, he is listed first among the pastors of Faith Community Church in Mapusa and has led the church’s Sunday prayer meetings in Calangute. Working with the UK charity Coaching For Christ, he helped train local coaches so the church could run a football ministry for children in the area. One young man who grew up in El Shaddai’s care, from kindergarten to Class 10, has described Pastor Matthew and Anita as the parents he looked up to.',
       ],
       points: [
+        { when: '1999', what: 'El Shaddai UK registered as a charity in England' },
         { when: '2009', what: 'El Shaddai UK office opens' },
         { when: '2010', what: 'El Shaddai Germany founded' },
+        { when: '2025', what: 'Flags off El Shaddai’s Goa Marathon at Miramar' },
       ],
       media: [
         { src: '/life/ps-matthew-2010.jpg', w: 735, h: 404, alt: 'Matthew Kurian receiving flowers from a child on stage', caption: 'Pastor Matthew at an event, April 2010.' },
@@ -140,10 +163,10 @@ export const profile = {
       period: 'From the 1990s',
       body: [
         'Matthew’s work with children began among the Lamani community, migrant families from Karnataka living in the slums of Karaswada and Sinquerim. He came to know the families, later visited their home villages in Karnataka, ran health camps, taught hygiene, clean water, prenatal care and the value of schooling, and went to government offices on their behalf for the basics they lacked.',
-        'Believing lasting change would come through the children, he started a small school with the community’s help, teaching reading and numbers. In 1997, with Anita Edgar, he set up El Shaddai Charitable Trust and its first children’s home, rescuing 15 children that year. Day and night shelters followed, along with the Manna Meals on Wheels feeding programme in Mapusa, Margao and Vasco, and support for women.',
+        'Believing lasting change would come through the children, he started a small school with the community’s help, teaching reading and numbers. In 1997, with Anita Edgar, he set up El Shaddai Charitable Trust and its first children’s home, Victory House in Chapora, rescuing 15 children that year. Four more homes had opened in Goa by 2002, and in 2003 the first community project opened in Panjim, offering a safe place, meals, education and skills training. Day and night shelters followed, along with the Manna Meals on Wheels feeding programme in Mapusa, Margao and Vasco, and support for women.',
       ],
       points: [
-        { when: '1997', what: 'First home opens, 15 children' },
+        { when: '1997', what: 'Victory House, the first home, opens in Chapora' },
         { when: '1999', what: 'Shanti Niketan, the first school, opens in Saligao with over 100 children' },
         { when: 'Today', what: 'Over 70,000 children educated, according to El Shaddai' },
       ],
@@ -171,7 +194,7 @@ export const profile = {
       title: 'Present day',
       period: 'Today',
       body: [
-        'Nearly three decades after founding El Shaddai, Matthew remains its Co-Founder and Managing Trustee, working from the Trust’s base in Assagao, North Goa. He continues to serve as a pastor at Faith Community Church in Mapusa and as a director of hospitality businesses in Goa.',
+        'Nearly three decades after founding El Shaddai, Matthew remains its Co-Founder and Managing Trustee, working from the Trust’s base in Assagao, North Goa. He continues to serve as a pastor at Faith Community Church in Mapusa, runs Style BU, and is a director of hospitality businesses in Goa.',
         'Goa, the place he came to in 1993 to help others rebuild their lives, has been his home ever since.',
       ],
       media: [
@@ -191,6 +214,7 @@ export const profile = {
   // Names shown without "Private Limited". Confirm with Matthew which
   // ones he wants listed, and their trading names, before publishing.
   ventures: [
+    { name: 'Style BU', role: 'Founder', since: '', note: 'Bespoke clothing, Mapusa' },
     { name: 'Goandream Hospitality', role: 'Director', since: '2005' },
     { name: 'Schreiber Resorts', role: 'Director', since: '2011' },
     { name: 'Abigail Resorts', role: 'Director', since: '2016' },

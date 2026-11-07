@@ -15,6 +15,12 @@ Every statement on the site comes from one of the sources below. Nothing has bee
 | S6 | El Shaddai Annual Report 2020–21: https://childrescue.net/wp-content/uploads/2022/01/ESCT-AR-2021-digital-distribution_final_jan-22.pdf | "Ps. Matthew Kurian"; former resident's words about "Pastor Mathew" and Anita; UK office 2009; El Shaddai Germany 2010 |
 | S7 | El Shaddai news page: https://childrescue.net/category/updates/ | Deepika Maanava Shresta Award (post of 22 Feb 2023); El Shaddai 25th anniversary (2022); Giving Economy Changemakers Award 2022; IIHM award 2023 |
 | S8 | Ministry of Corporate Affairs director record, DIN 02209241 (via qorpiq.com) | Director of Goandream Hospitality (2005), Schreiber Resorts (2011), Abigail Resorts (2016) |
+| S10 | Matthew Kurian, LinkedIn (public view): https://www.linkedin.com/in/goanpastor/ | Headline "StyleBU cloths and tailors", Mapusa; "Experienced Managing Trustee…"; his own words "I am passionate in developing people…"; education entry "Ephraim moore university"; recommendations by Gasper D'souza and Vikas Waghmare. Full job history is hidden without signing in |
+| S11 | Incredible Goa, "Matthew Kurian – 'BU' Style, Breaking The Thinking Barrier", Rajesh Ghadge, 27 Jun 2022: https://incrediblegoa.org/?p=8278 | Founder of Style BU ("Be Unique"), first store in Calangute, then Mapusa; bespoke clothing; around 50 people employed over about 10 years; clients incl. film stars and five-star hotels; two fashion shows; aim to build a fashion industry in Goa; described as a serial entrepreneur |
+| S12 | El Shaddai UK, Our Story: https://elshaddaisupportuk.org/our-story/ | Pastor of a local church when Anita Edgar met him (1996); first home Victory House, Chapora, 1997; four more homes by 2002; first community project in Panjim 2003; UK charity no. 1076768 registered 28 Jul 1999, set up by Anita and Matthew |
+| S13 | Coaching For Christ: https://coachingforchrist.org.uk/ | Testimonial by Pastor Matthew Kurian, El Shaddai Ministries, Goa: CFC helped train local coaches for a church football ministry |
+| S14 | El Shaddai, "Goa Marathon 2025: A Run for a Cause": https://childrescue.net/goa-marathon-2025-a-run-for-a-cause/ | Flagged off the Goa Marathon, 9 Feb 2025, Miramar |
+| S15 | Faith Community Church, home page: https://churchingoa.com/ | Listed first among six pastors; church at Altinho, Mapusa; speaker for messages posted July 2026 |
 | S9 | El Shaddai project document (proposal .docx on childrescue.net) | Excellence Award for National Social Activity, Global Achievers Foundation, 2012. Read earlier; could not be re-opened for this pass |
 
 ## Photos and videos on the site
@@ -39,6 +45,15 @@ Not used yet:
 - Other photos from the 9 Feb 2009 Mundgod visit (DSCI17xx): it isn't clear which person is Matthew.
 - `Matthew Kurian.jpg`: too small (128 × 168 px).
 - `IMG_7177.HEIC`: could not be opened here. Please export it as JPG.
+
+## Conflicts and unclear points found in research
+- **When he met Anita Edgar:** 1996 (El Shaddai UK) or 1997 (El Shaddai trustees page). The site avoids giving a year for the meeting.
+- **Pastor already in 1996?** El Shaddai UK says he was pastor of a local church when they met. Other sources date his ministry later. Not stated on the site until confirmed.
+- **Founder or co-founder:** Some pages call him "founder" of El Shaddai. The site uses Co-Founder, as the trustees page does.
+- **Church name:** Coaching For Christ calls it "El Shaddai Ministries"; the church site says Faith Community Church. Are these the same church?
+- **Education on LinkedIn:** lists "Ephraim moore university" with dates 1993 to 2032, plus an unnamed institution 1989 to 1993. Not used on the site. What did he study, and where?
+- **Style BU today:** is it still trading, and is the employee figure (around 50 over ten years, from 2022) still right?
+- **Hidden LinkedIn roles:** LinkedIn lists about ten roles that are only visible when signed in. Matthew can share the list or a PDF export.
 
 ## Information to collect from Matthew or the office
 
