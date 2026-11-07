@@ -21,6 +21,25 @@ function Ledger({ kind }) {
   );
 }
 
+function Media({ items }) {
+  return (
+    <div className={`chapter__media${items.length === 1 ? ' is-single' : ''}`}>
+      {items.map((m) => (
+        <figure className={`chapter__figure${m.h > m.w ? ' is-portrait' : ''}${m.type === 'video' ? ' is-video' : ''}`} key={m.src}>
+          {m.type === 'video' ? (
+            <video controls preload="none" playsInline poster={m.poster} width={m.w} height={m.h} aria-label={m.alt}>
+              <source src={m.src} type="video/mp4" />
+            </video>
+          ) : (
+            <img src={m.src} alt={m.alt} width={m.w} height={m.h} loading="lazy" decoding="async" />
+          )}
+          {m.caption && <figcaption>{m.caption}</figcaption>}
+        </figure>
+      ))}
+    </div>
+  );
+}
+
 export default function Introduction() {
   const [lede, ...rest] = profile.introduction;
   return (
@@ -67,6 +86,7 @@ export default function Introduction() {
                     </ul>
                   )}
                   {c.ledger && <Ledger kind={c.ledger} />}
+                  {c.media?.length > 0 && <Media items={c.media} />}
                 </div>
               </li>
             ))}

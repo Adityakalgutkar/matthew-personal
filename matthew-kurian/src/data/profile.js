@@ -62,6 +62,8 @@ export const profile = {
   //  body    paragraphs of story text
   //  points  short dated milestones shown beside the story
   //  ledger  'recognition' or 'ventures' shows that list in the chapter
+  //  media   photos and videos (files in public/life). Captions state only
+  //          what is known from the file or its date.
   //  private optional paragraph that is NOT shown unless `show` is true.
   //          Only switch it on once Matthew has said he wants it public.
   chapters: [
@@ -126,6 +128,11 @@ export const profile = {
         { when: '2009', what: 'El Shaddai UK office opens' },
         { when: '2010', what: 'El Shaddai Germany founded' },
       ],
+      media: [
+        { src: '/life/ps-matthew-2010.jpg', w: 735, h: 404, alt: 'Matthew Kurian receiving flowers from a child on stage', caption: 'Pastor Matthew at an event, April 2010.' },
+        { src: '/life/with-children.jpg', w: 1200, h: 799, alt: 'Matthew Kurian with a group of smiling girls', caption: 'Pastor Matthew with children.' },
+        { src: '/life/matthew-anita-2012.jpg', w: 1400, h: 935, alt: 'Matthew Kurian and Anita Edgar', caption: 'With El Shaddai co-founder Anita Edgar, May 2012.' },
+      ],
     },
     {
       id: 'community',
@@ -140,6 +147,12 @@ export const profile = {
         { when: '1999', what: 'Shanti Niketan, the first school, opens in Saligao with over 100 children' },
         { when: 'Today', what: 'Over 70,000 children educated, according to El Shaddai' },
       ],
+      media: [
+        { src: '/life/agape-home-2009.jpg', w: 1400, h: 1050, alt: 'Four men outside the Agape Children’s Home', caption: 'Agape Children’s Home in Mundgod, Uttar Kannada, run by El Shaddai. February 2009.' },
+        { src: '/life/children-2010.jpg', w: 1400, h: 1050, alt: 'A large group of children outside a home', caption: 'Children in El Shaddai’s care, June 2010.' },
+        { src: '/life/shanti-niketan-2012.jpg', w: 1400, h: 1050, alt: 'An award being presented on stage at Shanti Niketan', caption: 'At Shanti Niketan Non-Formal School, March 2012. Chief guest Mr Sanjeev Gadkar presents the winners’ group award, with Matthew Kurian.' },
+        { type: 'video', src: '/life/matthew-2020.mp4', poster: '/life/video-2020-poster.jpg', w: 1280, h: 720, alt: 'Video of Matthew Kurian with children', caption: 'With children in El Shaddai’s care, October 2020. 1 minute.' },
+      ],
     },
     {
       id: 'achievements',
@@ -149,6 +162,9 @@ export const profile = {
         'Matthew’s work has been recognised nationally and in his home state of Kerala. Under his leadership El Shaddai marked 25 years in 2022, and has itself received the Giving Economy Changemakers Award (2022) and the IIHM award for Outstanding Contribution to the Development of Education in India (2023).',
       ],
       ledger: 'recognition',
+      media: [
+        { src: '/life/award-2012.jpg', w: 1024, h: 683, alt: 'Matthew Kurian on stage holding an award trophy and certificate', caption: 'Receiving an award, April 2012.' },
+      ],
     },
     {
       id: 'present-day',
@@ -157,6 +173,10 @@ export const profile = {
       body: [
         'Nearly three decades after founding El Shaddai, Matthew remains its Co-Founder and Managing Trustee, working from the Trust’s base in Assagao, North Goa. He continues to serve as a pastor at Faith Community Church in Mapusa and as a director of hospitality businesses in Goa.',
         'Goa, the place he came to in 1993 to help others rebuild their lives, has been his home ever since.',
+      ],
+      media: [
+        { type: 'video', src: '/life/matthew-2026.mp4', poster: '/life/video-2026-poster.jpg', w: 1280, h: 720, alt: 'Video of Matthew Kurian speaking with children', caption: 'Matthew in his own words, with children in El Shaddai’s care, 2026. 5 minutes.' },
+        { src: '/life/matthew-anita-today.jpg', w: 1084, h: 1400, alt: 'Matthew Kurian and Anita Edgar today', caption: 'With Anita Edgar.' },
       ],
     },
   ],

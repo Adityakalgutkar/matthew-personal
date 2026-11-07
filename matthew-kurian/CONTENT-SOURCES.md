@@ -17,6 +17,29 @@ Every statement on the site comes from one of the sources below. Nothing has bee
 | S8 | Ministry of Corporate Affairs director record, DIN 02209241 (via qorpiq.com) | Director of Goandream Hospitality (2005), Schreiber Resorts (2011), Abigail Resorts (2016) |
 | S9 | El Shaddai project document (proposal .docx on childrescue.net) | Excellence Award for National Social Activity, Global Achievers Foundation, 2012. Read earlier; could not be re-opened for this pass |
 
+## Photos and videos on the site
+
+From the office folder `C:\freelancing\matthew-personal\images`, resized for the web into `public/life/`. Captions use only what the file name or its date shows.
+
+| Chapter | File on site | Original | Caption basis |
+|---|---|---|---|
+| Leadership & ministry | ps-matthew-2010.jpg | Ps. Matthew.JPG | File name, camera date 7 Apr 2010 |
+| Leadership & ministry | with-children.jpg | Ps. matthew with children.jpg 3 .jpg | File name (no reliable date) |
+| Leadership & ministry | matthew-anita-2012.jpg | matthew and anita.jpg | File name, camera date 19 May 2012 |
+| Community | agape-home-2009.jpg | DSCI1755.JPG | Sign on the building, date stamp 9 Feb 2009 |
+| Community | children-2010.jpg | IMG_2218.JPG | Camera date 20 Jun 2010 |
+| Community | shanti-niketan-2012.jpg | Chief Guest Mr Sanjeev Gadkar … .JPG | File name, banner, camera date 24 Mar 2012 |
+| Community | matthew-2020.mp4 | matthew1.mp4 | Recorded 22 Oct 2020 |
+| Achievements | award-2012.jpg | matthew award.JPG | Camera date 7 Apr 2012 |
+| Present day | matthew-2026.mp4 | Ps Matthew Changed Final.mp4 | Recorded 10 Sep 2026; on-screen title "Founder Matthew Kurian" |
+| Present day | matthew-anita-today.jpg | anita and matthew 2.png | File name |
+
+Not used yet:
+- `julia and matthew.jpg`, `matthew julia anita.jpg` (May 2012): waiting to know who Julia is and how Matthew wants her described.
+- Other photos from the 9 Feb 2009 Mundgod visit (DSCI17xx): it isn't clear which person is Matthew.
+- `Matthew Kurian.jpg`: too small (128 × 168 px).
+- `IMG_7177.HEIC`: could not be opened here. Please export it as JPG.
+
 ## Information to collect from Matthew or the office
 
 ### 1. Early life and childhood
@@ -54,6 +77,7 @@ Every statement on the site comes from one of the sources below. Nothing has bee
 - [ ] Any community work outside El Shaddai
 
 ### 7. Achievements and milestones
+- [ ] Name of the award in `matthew award.JPG` (April 2012). The backdrop reads "…of Huma… Awards 20…". Is this the Global Achievers award?
 - [ ] Confirm the 2012 Global Achievers Foundation award (only one source, which could not be re-checked)
 - [ ] Confirm the exact name and year of the Deepika award
 - [ ] The Incredible Goa award shown in the photo supplied earlier: name and year
@@ -64,6 +88,14 @@ Every statement on the site comes from one of the sources below. Nothing has bee
 - [ ] Incredible Goa (2018) said he had stepped back from day-to-day running of El Shaddai to a policy role. Is that still true?
 - [ ] The same article mentions plans for "Moksha", a senior citizens' home. Did it happen, and should it be included?
 - [ ] Anything he is working on now that he would like visitors to know about
+
+### Photos still needed
+- [ ] Childhood, school, seminary and college years (chapters 1 and 2 have no photos yet)
+- [ ] Early years in Goa (1990s), the Lamani community, the first home in 1997
+- [ ] Church ministry
+- [ ] Award ceremonies: 2008 National Award, 2023 Deepika award
+- [ ] Who Julia is, and whether her photos should be used
+- [ ] Is it fine to show children's faces? (Most office photos include children in El Shaddai's care)
 
 ### Contact details (unchanged, still needed)
 - [ ] Personal phone, WhatsApp, email and LinkedIn URL, each confirmed by Matthew
