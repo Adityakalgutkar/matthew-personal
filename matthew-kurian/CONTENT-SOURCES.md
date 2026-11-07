@@ -21,7 +21,7 @@ Every statement on the site comes from one of the sources below. Nothing has bee
 | S13 | Coaching For Christ: https://coachingforchrist.org.uk/ | Testimonial by Pastor Matthew Kurian, El Shaddai Ministries, Goa: CFC helped train local coaches for a church football ministry |
 | S14 | El Shaddai, "Goa Marathon 2025: A Run for a Cause": https://childrescue.net/goa-marathon-2025-a-run-for-a-cause/ | Flagged off the Goa Marathon, 9 Feb 2025, Miramar |
 | S15 | Faith Community Church, home page: https://churchingoa.com/ | Listed first among six pastors; church at Altinho, Mapusa; speaker for messages posted July 2026 |
-| S16 | Matthew's Facebook intro, supplied by the developer (Nov 2026): "A pastor and a social activist. My passion is helping everyone to discover their purpose in life." | Hero line, in his own words. Facebook profile link still needed |
+| S16 | Matthew's Facebook intro, supplied by the developer (Nov 2026): "A pastor and a social activist. My passion is helping everyone to discover their purpose in life." | Hero line, in his own words. Profile: https://www.facebook.com/Goanpastor/ (added to Contact and the contact card) |
 | S17 | Faith Community Church YouTube: https://www.youtube.com/@churchingoa | Link to Sunday services and sermons in Contact |
 | S9 | El Shaddai project document (proposal .docx on childrescue.net) | Excellence Award for National Social Activity, Global Achievers Foundation, 2012. Read earlier; could not be re-opened for this pass |
 
@@ -43,7 +43,7 @@ From the office folder `C:\freelancing\matthew-personal\images`, resized for the
 | Present day | matthew-anita-today.jpg | anita and matthew 2.png | File name |
 
 Not used yet:
-- `julia and matthew.jpg` and `matthew julia anita.jpg` (May 2012) are now in the Personal journey chapter, captioned only "With Julia". Confirm who Julia is and how Matthew wants her described.
+- `julia and matthew.jpg` and `matthew julia anita.jpg` (May 2012) are now in the Personal journey chapter, captioned "With his wife, Julia" (confirmed by the developer, 7 Nov 2026).
 - Other photos from the 9 Feb 2009 Mundgod visit (DSCI17xx): it isn't clear which person is Matthew.
 - `Matthew Kurian.jpg`: too small (128 × 168 px).
 - `IMG_7177.HEIC`: could not be opened here. Please export it as JPG.
@@ -116,7 +116,6 @@ Not used yet:
 - [ ] Early years in Goa (1990s), the Lamani community, the first home in 1997
 - [ ] Church ministry
 - [ ] Award ceremonies: 2008 National Award, 2023 Deepika award
-- [ ] Who Julia is, and whether her photos should be used
 - [ ] Is it fine to show children's faces? (Most office photos include children in El Shaddai's care)
 
 ### Contact details (unchanged, still needed)

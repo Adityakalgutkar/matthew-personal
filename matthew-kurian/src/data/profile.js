@@ -126,8 +126,8 @@ export const profile = {
         text: 'Matthew has spoken openly about his own struggle with drug addiction, which lasted more than eight years. At around 22 he left that life behind, returned to college and found his faith again, an experience that later drew him to stand alongside others facing addiction.',
       },
       media: [
-        { src: '/life/matthew-julia-2012.jpg', w: 933, h: 1400, alt: 'Matthew Kurian with Julia', caption: 'With Julia, May 2012.' },
-        { src: '/life/matthew-julia-anita-2012.jpg', w: 1400, h: 933, alt: 'Matthew Kurian with Julia and Anita Edgar', caption: 'With Julia and Anita Edgar, May 2012.' },
+        { src: '/life/matthew-julia-2012.jpg', w: 933, h: 1400, alt: 'Matthew Kurian with his wife, Julia', caption: 'With his wife, Julia, May 2012.' },
+        { src: '/life/matthew-julia-anita-2012.jpg', w: 1400, h: 933, alt: 'Matthew Kurian with his wife, Julia, and Anita Edgar', caption: 'With his wife, Julia, and El Shaddai co-founder Anita Edgar, May 2012.' },
       ],
     },
     {
@@ -242,7 +242,7 @@ export const profile = {
   whatsapp: null,     // international format, digits only, e.g. '9198xxxxxxxx'
   email: null,        // e.g. 'name@childrescue.net'
   linkedin: 'https://www.linkedin.com/in/goanpastor/',
-  facebook: null,     // full URL of Matthew's Facebook profile
+  facebook: 'https://www.facebook.com/Goanpastor/',
   website: 'https://childrescue.net/',
   websiteLabel: 'childrescue.net',
 
