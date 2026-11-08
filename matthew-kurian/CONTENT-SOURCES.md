@@ -63,6 +63,15 @@ Not used yet:
 - Hero line replaced with Matthew's Facebook intro.
 - LinkedIn, the church website and the church YouTube channel added to Contact. LinkedIn is also in the saved contact card.
 
+## Photos added 8 Nov 2026 (Google Drive folder from the office, WhatsApp images)
+- Hero portrait (matthew-kurian-hero.jpg) and contact-card photo: cropped from the Deepika event photo (Matthew laughing, black shirt). A higher-resolution original would look sharper.
+- Early life: early-years.jpg, an old print. **Confirm that Matthew is the young man on the far left, and roughly the year.**
+- Leadership & ministry: ministry-stage.jpg, ministry-church.jpg.
+- Community: goa-marathon-2020.jpg (banner reads Goa Marathon 2020, 2nd Feb).
+- Achievements: deepika-award.jpg. The plaque reads "137 years of Unflinching Legacy"; Deepika was founded in 1887, which suggests a 2024 event. **Confirm the year: the site lists the Deepika award as 2023.**
+- Family & life (new chapter 9): 8 photos, captioned only "With family", "In London", etc. No one else is named. Confirm Matthew is happy for family photos, including grandchildren or young children, to be public.
+- Not used: duplicates, a document photo (resolution), award photos where Matthew isn't visible (Garshom National Awards), and photos where it's unclear who is who.
+
 ## Information to collect from Matthew or the office
 
 ### 1. Early life and childhood

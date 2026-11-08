@@ -95,6 +95,9 @@ export const profile = {
       body: [
         'Matthew grew up in Kerala, in a Catholic family. When a cousin went on to become a Franciscan priest, the young Matthew began to wonder whether the same calling might be meant for him.',
       ],
+      media: [
+        { src: '/life/early-years.jpg', w: 1280, h: 960, alt: 'An old printed photograph of four people; Matthew Kurian stands on the far left', caption: 'An early photograph. Matthew is on the far left.' },
+      ],
     },
     {
       id: 'education',
@@ -161,6 +164,8 @@ export const profile = {
         { src: '/life/ps-matthew-2010.jpg', w: 735, h: 404, alt: 'Matthew Kurian receiving flowers from a child on stage', caption: 'Pastor Matthew at an event, April 2010.' },
         { src: '/life/with-children.jpg', w: 1200, h: 799, alt: 'Matthew Kurian with a group of smiling girls', caption: 'Pastor Matthew with children.' },
         { src: '/life/matthew-anita-2012.jpg', w: 1400, h: 935, alt: 'Matthew Kurian and Anita Edgar', caption: 'With El Shaddai co-founder Anita Edgar, May 2012.' },
+        { src: '/life/ministry-stage.jpg', w: 960, h: 1280, alt: 'Matthew Kurian standing at a clear lectern on a stage with red lettering behind', caption: 'Pastor Matthew on stage.' },
+        { src: '/life/ministry-church.jpg', w: 960, h: 1280, alt: 'Matthew Kurian in a white kurta and black waistcoat beside another man in front of a cross', caption: 'At a church service.' },
       ],
     },
     {
@@ -181,6 +186,7 @@ export const profile = {
         { src: '/life/children-2010.jpg', w: 1400, h: 1050, alt: 'A large group of children outside a home', caption: 'Children in El Shaddai’s care, June 2010.' },
         { src: '/life/shanti-niketan-2012.jpg', w: 1400, h: 1050, alt: 'An award being presented on stage at Shanti Niketan', caption: 'At Shanti Niketan Non-Formal School, March 2012. Chief guest Mr Sanjeev Gadkar presents the winners’ group award, with Matthew Kurian.' },
         { type: 'video', src: '/life/matthew-2020.mp4', poster: '/life/video-2020-poster.jpg', w: 1280, h: 720, alt: 'Video of Matthew Kurian with children', caption: 'With children in El Shaddai’s care, October 2020. 1 minute.' },
+        { src: '/life/goa-marathon-2020.jpg', w: 1280, h: 960, alt: 'Matthew Kurian seated at a press table in front of a Goa Marathon 2020 banner', caption: 'At a press conference for the Goa Marathon 2020.' },
       ],
     },
     {
@@ -193,6 +199,7 @@ export const profile = {
       ledger: 'recognition',
       media: [
         { src: '/life/award-2012.jpg', w: 1024, h: 683, alt: 'Matthew Kurian on stage holding an award trophy and certificate', caption: 'Receiving an award, April 2012.' },
+        { src: '/life/deepika-award.jpg', w: 1280, h: 1054, alt: 'Matthew Kurian wearing a shawl, receiving a framed award on stage', caption: 'Receiving an award from Deepika, the Kerala daily.' },
       ],
     },
     {
@@ -206,6 +213,24 @@ export const profile = {
       media: [
         { type: 'video', src: '/life/matthew-2026.mp4', poster: '/life/video-2026-poster.jpg', w: 1280, h: 720, alt: 'Video of Matthew Kurian speaking with children', caption: 'Matthew in his own words, with children in El Shaddai’s care, 2026. 5 minutes.' },
         { src: '/life/matthew-anita-today.jpg', w: 1084, h: 1400, alt: 'Matthew Kurian and Anita Edgar today', caption: 'With Anita Edgar.' },
+      ],
+    },
+    {
+      id: 'family',
+      title: 'Family & life',
+      period: 'Beyond the work',
+      body: [
+        'Away from El Shaddai, the church and his businesses, Matthew’s life is shared with his wife, Julia, and with family and friends, at home in Goa and on his travels.',
+      ],
+      media: [
+        { src: '/life/family-1.jpg', w: 1280, h: 960, alt: 'Matthew Kurian seated with family, holding a newborn baby', caption: 'With family.' },
+        { src: '/life/family-2.jpg', w: 959, h: 1280, alt: 'Matthew Kurian smiling with a young girl', caption: 'With family.' },
+        { src: '/life/family-3.jpg', w: 1280, h: 961, alt: 'Matthew Kurian in sunglasses taking a selfie with a woman beside a river', caption: 'Family time.' },
+        { src: '/life/family-4.jpg', w: 1280, h: 960, alt: 'Matthew Kurian with a group of adults and children outdoors', caption: 'With family and friends.' },
+        { src: '/life/travel-london.jpg', w: 960, h: 1280, alt: 'Matthew Kurian with two friends in front of Tower Bridge, London', caption: 'In London.' },
+        { src: '/life/trek.jpg', w: 960, h: 1280, alt: 'Two hikers with trekking poles silhouetted in mist', caption: 'Out on a trek.' },
+        { src: '/life/exercise.jpg', w: 1103, h: 1280, alt: 'Matthew Kurian sitting cross-legged on a mat at a sports ground', caption: 'Morning exercise.' },
+        { src: '/life/with-dog.jpg', w: 720, h: 1280, alt: 'Matthew Kurian hugging a pug', caption: 'At home.' },
       ],
     },
   ],
@@ -269,19 +294,20 @@ export const profile = {
   //  2. The same official photo, loaded from childrescue.net.
   //  3. The previously supplied photo.
   profileImages: [
+    '/matthew-kurian-hero.jpg',
     '/matthew-kurian-official.webp',
     'https://childrescue.net/wp-content/uploads/2026/10/team-matthew-kurian-2026.webp',
     '/matthew-kurian.jpg',
   ],
   profileImageAlt: 'Matthew Kurian',
   // Vertical focus of the crop (0% top … 100% bottom).
-  profileImageFocus: '25%',
+  profileImageFocus: '35%',
   // 'ink': black-and-white print toned to the site palette (ink shadows,
   // parchment highlights), so any photo sits with the design. 'none': original colour.
   profileImageTone: 'ink',
   // Small copy embedded in the saved contact card, and the link-preview image.
   profileImageCard: '/matthew-kurian-card.jpg',
-  ogImage: '/matthew-kurian.jpg',
+  ogImage: '/matthew-kurian-hero.jpg',
 
   vcardFileName: 'matthew-kurian.vcf',
 };
