@@ -3,6 +3,7 @@ import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
 import Introduction from './components/Introduction.jsx';
 import Organisation from './components/Organisation.jsx';
+import Gallery from './components/Gallery.jsx';
 import ContactActions from './components/ContactActions.jsx';
 import Footer from './components/Footer.jsx';
 import ActionBar from './components/ActionBar.jsx';
@@ -23,6 +24,7 @@ export default function App() {
         <Hero {...props} />
         <Introduction />
         <Organisation />
+        <Gallery />
         <ContactActions {...props} />
       </main>
       <Footer />

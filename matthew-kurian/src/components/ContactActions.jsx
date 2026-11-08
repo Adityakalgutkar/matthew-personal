@@ -26,7 +26,7 @@ export default function ContactActions({ vcardHref, saved, onSave, onShare }) {
   return (
     <section className="contact" id="contact" aria-labelledby="contact-title">
       <div className="wrap contact__grid">
-        <SectionMark num="03" label="Contact" />
+        <SectionMark num="04" label="Contact" />
         <div className="contact__intro" data-reveal>
           <h2 className="contact__title" id="contact-title">Stay in <em>touch.</em></h2>
           <p>Save Matthew’s details to your phone in one tap, or pass this page on to someone who should meet him.</p>

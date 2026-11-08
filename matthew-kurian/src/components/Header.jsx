@@ -5,7 +5,8 @@ import { MenuIcon, CloseIcon, SaveIcon } from './Icons.jsx';
 export const NAV = [
   { href: '#about', num: '01', label: 'About' },
   { href: '#work', num: '02', label: 'His work' },
-  { href: '#contact', num: '03', label: 'Contact' },
+  { href: '#gallery', num: '03', label: 'Gallery' },
+  { href: '#contact', num: '04', label: 'Contact' },
 ];
 
 export default function Header({ vcardHref, onSave }) {

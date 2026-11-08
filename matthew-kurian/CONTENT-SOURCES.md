@@ -72,6 +72,11 @@ Not used yet:
 - Family & life (new chapter 9): 8 photos, captioned only "With family", "In London", etc. No one else is named. Confirm Matthew is happy for family photos, including grandchildren or young children, to be public.
 - Not used: duplicates, a document photo (resolution), award photos where Matthew isn't visible (Garshom National Awards), and photos where it's unclear who is who.
 
+## Gallery (added 8 Nov 2026)
+- New section 03 Gallery with tabs: All, Family, El Shaddai, Ministry, Recognition, Travel & life, Videos. Contact is now section 04.
+- To add photos: resize to about 1280 px on the long side, put them in `public/life/`, and add a line to `gallery` in `src/data/profile.js` with its `tab`. A tab only appears when it has photos, so new tabs (for example Youth or Style BU) can be added to `galleryTabs` at any time.
+- Chapters now show at most two photos (or one photo and a video), all cropped to the same shape, so the gaps between them are even. Everything else is in the gallery.
+
 ## Information to collect from Matthew or the office
 
 ### 1. Early life and childhood

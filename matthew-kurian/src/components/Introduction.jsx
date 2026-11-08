@@ -25,13 +25,13 @@ function Media({ items }) {
   return (
     <div className={`chapter__media${items.length === 1 ? ' is-single' : ''}`}>
       {items.map((m) => (
-        <figure className={`chapter__figure${m.h > m.w ? ' is-portrait' : ''}${m.type === 'video' ? ' is-video' : ''}`} key={m.src}>
+        <figure className={`chapter__figure${m.type === 'video' ? ' is-video' : ''}`} key={m.src}>
           {m.type === 'video' ? (
             <video controls preload="none" playsInline poster={m.poster} width={m.w} height={m.h} aria-label={m.alt}>
               <source src={m.src} type="video/mp4" />
             </video>
           ) : (
-            <img src={m.src} alt={m.alt} width={m.w} height={m.h} loading="lazy" decoding="async" />
+            <img src={m.src} alt={m.alt} width={m.w} height={m.h} loading="lazy" decoding="async" style={m.focus ? { objectPosition: m.focus } : undefined} />
           )}
           {m.caption && <figcaption>{m.caption}</figcaption>}
         </figure>
@@ -112,6 +112,7 @@ export default function Introduction() {
                   )}
                   {c.ledger && <Ledger kind={c.ledger} />}
                   {c.media?.length > 0 && <Media items={c.media} />}
+                  {c.more && <a className="chapter__more" href={c.more.href}>{c.more.label}</a>}
                 </div>
               </li>
             ))}
