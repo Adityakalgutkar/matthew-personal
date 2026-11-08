@@ -333,7 +333,7 @@ export const profile = {
   profileImageFocus: '35%',
   // 'ink': black-and-white print toned to the site palette (ink shadows,
   // parchment highlights), so any photo sits with the design. 'none': original colour.
-  profileImageTone: 'ink',
+  profileImageTone: 'none',
   // Small copy embedded in the saved contact card, and the link-preview image.
   profileImageCard: '/matthew-kurian-card.jpg',
   ogImage: '/matthew-kurian-hero.jpg',
