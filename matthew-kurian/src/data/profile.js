@@ -208,6 +208,7 @@ export const profile = {
       media: [
         { type: 'video', src: '/life/matthew-2026.mp4', poster: '/life/video-2026-poster.jpg', w: 1280, h: 720, alt: 'Video of Matthew Kurian speaking with children', caption: 'Matthew in his own words, with children in El Shaddai’s care, 2026. 5 minutes.' },
         { src: '/life/matthew-anita-today.jpg', w: 1084, h: 1400, alt: 'Matthew Kurian and Anita Edgar today', caption: 'With Anita Edgar.', focus: 'center 30%' },
+        { src: '/life/ministry-church.jpg', w: 960, h: 1280, alt: 'Matthew Kurian in a white kurta and black waistcoat beside another man in front of a cross', caption: 'At a church service.', focus: 'center 30%' },
       ],
     },
     {
