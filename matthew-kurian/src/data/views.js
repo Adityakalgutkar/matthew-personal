@@ -37,6 +37,16 @@ export const views = {
   'el-shaddai': {
     path: '/el-shaddai',
     label: 'El Shaddai Charitable Trust',
+    brand: {
+      name: 'El Shaddai',
+      sub: 'Charitable Trust · Goa · since 1997',
+      logo: null, // put the official logo in public/logos/ and set e.g. '/logos/el-shaddai.png'
+      photos: [
+        { src: '/life/el-shaddai-school-bags-2026.jpg', w: 1400, h: 1050, alt: 'Children holding up new school bags at an El Shaddai centre', caption: 'New school bags for the children, June 2026.' },
+        { src: '/life/el-shaddai-centre-2025.jpg', w: 1400, h: 788, alt: 'Children seated on the floor of a large covered hall at an El Shaddai centre', caption: 'At an El Shaddai centre, August 2025.' },
+        { src: '/life/el-shaddai-colouring-2026.jpg', w: 1050, h: 1400, alt: 'A smiling boy in a red T-shirt colouring a Holi activity sheet', caption: 'Colouring at a community class, July 2026.' },
+      ],
+    },
     sections: ['about', 'work', 'gallery', 'contact'],
     hero: {
       intro: 'Building opportunities for children and communities to create brighter futures.',
@@ -66,7 +76,16 @@ export const views = {
   'goa-marathon': {
     path: '/goa-marathon',
     label: 'Goa Marathon',
-    sections: ['about', 'work', 'contact'],
+    brand: {
+      name: 'Goa Marathon',
+      sub: 'A run for a cause · organised by El Shaddai',
+      logo: null, // e.g. '/logos/goa-marathon.png'
+      photos: [
+        { src: '/life/marathon-2025-runner.jpg', w: 1400, h: 933, alt: 'A runner giving two thumbs up during the night race', caption: 'Goa Marathon, 9 February 2025.' },
+        { src: '/life/marathon-2025-runners.jpg', w: 1400, h: 933, alt: 'Two runners on a lit city road; one wears a Run for Hope race T-shirt', caption: 'Runners in the Goa Marathon, 9 February 2025.' },
+        { src: '/life/marathon-2025-night.jpg', w: 1400, h: 933, alt: 'A runner in a green club vest on the early-morning course', caption: 'On the course before dawn, 9 February 2025.' },
+      ],
+    },
     hero: {
       note: 'El Shaddai organises the Goa Marathon, a run for a cause.',
       intro: 'Every runner in the Goa Marathon helps raise funds for El Shaddai’s work with children in need.',
@@ -95,12 +114,15 @@ export const views = {
           { when: '2025', what: 'Matthew flags off the race at Miramar, 9 February' },
         ],
         media: [
+          { src: '/life/marathon-2025-runners.jpg', w: 1400, h: 933, alt: 'Two runners on a lit city road; one wears a Run for Hope race T-shirt', caption: 'Runners in the Goa Marathon, 9 February 2025.' },
           { src: '/life/goa-marathon-2020.jpg', w: 1280, h: 960, alt: 'Matthew Kurian seated at a press table in front of a Goa Marathon 2020 banner', caption: 'At a press conference for the Goa Marathon 2020.' },
         ],
       },
       'achievements',
     ],
     chaptersLabel: 'The Goa Marathon',
+    sections: ['about', 'work', 'gallery', 'contact'],
+    galleryTabs: ['marathon'],
     channels: ['marathon', 'whatsapp', 'phone', 'email', 'linkedin', 'website', 'org-phone', 'org-email'],
     meta: {
       title: 'Matthew Kurian — Goa Marathon, El Shaddai Charitable Trust',
@@ -111,6 +133,12 @@ export const views = {
   business: {
     path: '/business',
     label: 'Business',
+    brand: {
+      name: 'Style BU',
+      sub: 'Be Unique · bespoke clothing · Mapusa, Goa',
+      logo: null, // e.g. '/logos/style-bu.png'
+      photos: [], // add Style BU photos (store, garments, fashion shows) here
+    },
     sections: ['about', 'contact'],
     hero: {
       role: 'Founder',

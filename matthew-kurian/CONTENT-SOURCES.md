@@ -87,6 +87,13 @@ One site, four links. Each QR code opens a version focused on one part of Matthe
 - **Resorts removed** at Matthew's request: the three hospitality companies (Goandream Hospitality, Schreiber Resorts, Abigail Resorts) are no longer anywhere on the site or in the contact cards.
 - To confirm: Matthew's exact role in the Goa Marathon (the site says only that El Shaddai organises it and that he flagged off the 2025 race); whether stylebu.in is Style BU's own website.
 
+## Brand bands and photos (17 Nov 2026)
+- Each focused version now opens with a band carrying the organisation's name and photos: El Shaddai, Goa Marathon, Style BU.
+- **Logos:** no logo files were found in the office Drive folders, and the organisations' websites can't be reached from the build tools. Until the real logos are supplied, each band shows the name as a text wordmark. To add one, put the file in `public/logos/` (see README there) and set `logo` in `src/data/views.js`.
+- **Goa Marathon photos:** from the Drive folder "Goa marathon" (WeTransfer set from graphic@childrescue.net), camera date 9 Feb 2025, matching the 2025 race. Runners are members of the public; confirm the Trust is happy to use them here, as on goamarathon.org.
+- **El Shaddai photos:** from the Drive folder "Child rescue" (graphic@childrescue.net), camera dates Jun 2026, Jul 2026, Aug 2025. Captions are kept general (no names or exact locations).
+- **Style BU:** no photos yet. Needed: the store, garments or wedding wear, fashion shows, and the logo.
+
 ## Information to collect from Matthew or the office
 
 ### 1. Early life and childhood

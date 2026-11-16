@@ -9,6 +9,7 @@ import Footer from './components/Footer.jsx';
 import ActionBar from './components/ActionBar.jsx';
 import { hasSection } from './components/Header.jsx';
 import PreviewSwitcher from './components/PreviewSwitcher.jsx';
+import BrandBand from './components/BrandBand.jsx';
 import { useContactActions, vcardHref } from './hooks/useContactActions.js';
 import { useReveal } from './hooks/useReveal.js';
 
@@ -24,6 +25,7 @@ export default function App() {
       <Header vcardHref={href} onSave={onSave} />
       <main>
         <Hero {...props} />
+        <BrandBand />
         {hasSection('about') && <Introduction />}
         {hasSection('work') && <Organisation />}
         {hasSection('gallery') && <Gallery />}

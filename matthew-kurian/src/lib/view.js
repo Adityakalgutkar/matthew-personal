@@ -52,6 +52,7 @@ export function applyView(base, id) {
     channels: v.channels || null,
     websiteName: (v.contact && v.contact.websiteName) || 'El Shaddai Charitable Trust',
     meta: v.meta || null,
+    brand: v.brand || null,
   };
   if (v.contact && 'website' in v.contact) {
     // A business card points to the business, not the Trust.
