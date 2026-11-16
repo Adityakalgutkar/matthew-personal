@@ -1,12 +1,13 @@
-import { profile } from '../data/profile.js';
+import { profile } from '../data/current.js';
 import SectionMark from './SectionMark.jsx';
+import { sectionNum } from './Header.jsx';
 import { ArrowIcon } from './Icons.jsx';
 
 export default function Organisation() {
   return (
     <section className="work" id="work" aria-labelledby="work-title">
       <div className="wrap work__grid">
-        <SectionMark num="02" label="His work" />
+        <SectionMark num={sectionNum('work')} label="His work" />
         <div className="work__intro" data-reveal>
           <h2 className="work__title" id="work-title">A vision that grew into a <em>movement.</em></h2>
           <p className="work__summary">{profile.organisationSummary}</p>

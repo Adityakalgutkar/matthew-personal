@@ -7,6 +7,8 @@ import Gallery from './components/Gallery.jsx';
 import ContactActions from './components/ContactActions.jsx';
 import Footer from './components/Footer.jsx';
 import ActionBar from './components/ActionBar.jsx';
+import { hasSection } from './components/Header.jsx';
+import PreviewSwitcher from './components/PreviewSwitcher.jsx';
 import { useContactActions, vcardHref } from './hooks/useContactActions.js';
 import { useReveal } from './hooks/useReveal.js';
 
@@ -22,13 +24,14 @@ export default function App() {
       <Header vcardHref={href} onSave={onSave} />
       <main>
         <Hero {...props} />
-        <Introduction />
-        <Organisation />
-        <Gallery />
-        <ContactActions {...props} />
+        {hasSection('about') && <Introduction />}
+        {hasSection('work') && <Organisation />}
+        {hasSection('gallery') && <Gallery />}
+        {hasSection('contact') && <ContactActions {...props} />}
       </main>
       <Footer />
       <ActionBar {...props} />
+      <PreviewSwitcher />
       <div className={`toast${toast ? ' is-shown' : ''}`} role="status" aria-live="polite">{toast}</div>
     </>
   );

@@ -77,6 +77,16 @@ Not used yet:
 - To add photos: resize to about 1280 px on the long side, put them in `public/life/`, and add a line to `gallery` in `src/data/profile.js` with its `tab`. A tab only appears when it has photos, so new tabs (for example Youth or Style BU) can be added to `galleryTabs` at any time.
 - Chapters now show at most two photos (or one photo and a video), all cropped to the same shape, so the gaps between them are even. Everything else is in the gallery.
 
+## QR versions (added 17 Nov 2026, at Matthew's request)
+One site, four links. Each QR code opens a version focused on one part of Matthew's life (set up in `src/data/views.js`):
+- **Main** — https://matthew-kurian.vercel.app/ — everything.
+- **El Shaddai** — https://matthew-kurian.vercel.app/el-shaddai — El Shaddai only: no church, Style BU or family.
+- **Goa Marathon** — https://matthew-kurian.vercel.app/goa-marathon — the marathon, El Shaddai's work and recognition. Race list (Full, Half, 10K, 5K Dream Run) and online registration come from the developer's work on goamarathon.org.
+- **Business** — https://matthew-kurian.vercel.app/business — Style BU only, with its own contact card (matthew-kurian-business.vcf: Founder, Style BU, stylebu.in).
+- Each version has its own page title and link preview, so a shared link shows the right card.
+- **Resorts removed** at Matthew's request: the three hospitality companies (Goandream Hospitality, Schreiber Resorts, Abigail Resorts) are no longer anywhere on the site or in the contact cards.
+- To confirm: Matthew's exact role in the Goa Marathon (the site says only that El Shaddai organises it and that he flagged off the 2025 race); whether stylebu.in is Style BU's own website.
+
 ## Information to collect from Matthew or the office
 
 ### 1. Early life and childhood

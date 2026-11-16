@@ -1,4 +1,4 @@
-import { profile, titleLine } from '../data/profile.js';
+import { profile, titleLine } from '../data/current.js';
 import { NAV } from './Header.jsx';
 import { ArrowIcon } from './Icons.jsx';
 

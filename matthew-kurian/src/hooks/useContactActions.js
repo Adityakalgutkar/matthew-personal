@@ -1,12 +1,12 @@
 import { useCallback, useRef, useState } from 'react';
-import { profile, titleLine } from '../data/profile.js';
+import { profile, titleLine } from '../data/current.js';
 import { buildVCard } from '../lib/vcard.js';
 
 /* global __INLINE_VCARD__ */
 const INLINE = typeof __INLINE_VCARD__ !== 'undefined' && __INLINE_VCARD__;
 
 export function permanentUrl() {
-  if (profile.siteUrl) return profile.siteUrl.replace(/\/$/, '') + '/';
+  if (profile.siteUrl) return profile.siteUrl.replace(/\/$/, '') + (profile.viewPath === '/' ? '/' : profile.viewPath);
   if (typeof window === 'undefined') return '';
   const { origin, pathname } = window.location;
   return origin && origin !== 'null' ? origin + pathname : window.location.href;

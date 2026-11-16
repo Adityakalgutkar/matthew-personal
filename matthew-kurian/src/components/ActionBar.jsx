@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { profile } from '../data/profile.js';
+import { profile } from '../data/current.js';
 import { getInTouchTarget } from '../lib/channels.js';
 import { SaveIcon, CheckIcon, ShareIcon } from './Icons.jsx';
 

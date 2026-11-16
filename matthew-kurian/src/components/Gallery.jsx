@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { profile } from '../data/profile.js';
+import { profile } from '../data/current.js';
 import SectionMark from './SectionMark.jsx';
+import { sectionNum } from './Header.jsx';
 import { CloseIcon, ArrowRight } from './Icons.jsx';
 
 const ALL = { id: 'all', label: 'All' };
@@ -48,7 +49,7 @@ export default function Gallery() {
   return (
     <section className="gallery" id="gallery" aria-labelledby="gallery-title">
       <div className="wrap gallery__grid">
-        <SectionMark num="03" label="Gallery" />
+        <SectionMark num={sectionNum('gallery')} label="Gallery" />
         <div className="gallery__head" data-reveal>
           <h2 className="gallery__title" id="gallery-title">Moments <em>along the way.</em></h2>
           <div className="gallery__tabs" role="tablist" aria-label="Gallery categories">

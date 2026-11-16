@@ -1,6 +1,7 @@
-import { profile } from '../data/profile.js';
+import { profile } from '../data/current.js';
 import { personalChannels, organisationChannels } from '../lib/channels.js';
 import SectionMark from './SectionMark.jsx';
+import { sectionNum } from './Header.jsx';
 import { SaveIcon, CheckIcon, ShareIcon, ArrowIcon, PhoneIcon, ChatIcon, MailIcon, ProfileIcon, GlobeIcon } from './Icons.jsx';
 
 const ICONS = { phone: PhoneIcon, chat: ChatIcon, mail: MailIcon, profile: ProfileIcon, globe: GlobeIcon };
@@ -22,11 +23,12 @@ function Row({ r }) {
 }
 
 export default function ContactActions({ vcardHref, saved, onSave, onShare }) {
-  const rows = [...personalChannels(profile), ...organisationChannels(profile)];
+  const all = [...personalChannels(profile), ...organisationChannels(profile)];
+  const rows = profile.channels ? profile.channels.map((k) => all.find((r) => r.key === k)).filter(Boolean) : all;
   return (
     <section className="contact" id="contact" aria-labelledby="contact-title">
       <div className="wrap contact__grid">
-        <SectionMark num="04" label="Contact" />
+        <SectionMark num={sectionNum('contact')} label="Contact" />
         <div className="contact__intro" data-reveal>
           <h2 className="contact__title" id="contact-title">Stay in <em>touch.</em></h2>
           <p>Save Matthew’s details to your phone in one tap, or pass this page on to someone who should meet him.</p>

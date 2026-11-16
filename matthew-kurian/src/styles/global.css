@@ -863,3 +863,9 @@ em { font-style: italic; }
   .site-header, .hero__actions, .contact__panel, .toast { display: none !important; }
   .work, .footer { background: none; color: var(--ink); }
 }
+
+/* Preview-only view switcher (not in the live site) */
+.preview-switch { position: fixed; z-index: 60; top: 72px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 4px; padding: 4px; background: var(--ink); color: #fff; font-size: 12px; box-shadow: 0 6px 24px rgba(0,0,0,0.2); max-width: calc(100vw - 16px); overflow-x: auto; }
+.preview-switch > span { padding: 0 8px; opacity: 0.6; text-transform: uppercase; letter-spacing: 0.06em; font-size: 11px; }
+.preview-switch button { flex: none; border: 0; background: transparent; color: #fff; font: inherit; font-weight: 700; padding: 8px 10px; cursor: pointer; white-space: nowrap; }
+.preview-switch button[aria-pressed='true'] { background: #fff; color: var(--ink); }

@@ -1,4 +1,4 @@
-import { profile, titleLine } from '../data/profile.js';
+import { profile, titleLine } from '../data/current.js';
 import { getInTouchTarget } from '../lib/channels.js';
 import Portrait from './Portrait.jsx';
 import { SaveIcon, CheckIcon, ArrowRight } from './Icons.jsx';
@@ -9,7 +9,7 @@ export default function Hero({ vcardHref, saved, onSave }) {
     <section className="hero" id="top" aria-labelledby="hero-name">
       <div className="hero__grid">
         <p className="hero__meta">
-          <span>Personal profile</span>
+          <span>{profile.viewLabel}</span>
           <span className="hero__meta-rule" aria-hidden="true" />
           <span>{profile.location}</span>
         </p>

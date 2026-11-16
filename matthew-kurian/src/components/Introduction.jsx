@@ -1,5 +1,6 @@
-import { profile } from '../data/profile.js';
+import { profile } from '../data/current.js';
 import SectionMark from './SectionMark.jsx';
+import { sectionNum } from './Header.jsx';
 
 function Ledger({ kind }) {
   const rows = kind === 'recognition'
@@ -45,7 +46,7 @@ export default function Introduction() {
   return (
     <section className="about" id="about" aria-labelledby="about-title">
       <div className="wrap about__grid">
-        <SectionMark num="01" label="About" />
+        <SectionMark num={sectionNum('about')} label="About" />
         <h2 className="about__title" id="about-title" data-reveal>A little about <em>Matthew.</em></h2>
 
         <dl className="facts" data-reveal>
@@ -76,7 +77,7 @@ export default function Introduction() {
           </div>
         )}
 
-        {profile.quotes && (
+        {profile.quotes && Object.keys(profile.quotes).length > 0 && (
           <div className="voices" data-reveal>
             {['own', 'said'].filter((k) => profile.quotes[k]).map((k) => (
               <figure className={`voice voice--${k}`} key={k}>
@@ -87,8 +88,8 @@ export default function Introduction() {
           </div>
         )}
 
-        <div className="chapters">
-          <h3 className="sub-label chapters__label" data-reveal>His life, in chapters</h3>
+        {profile.chapters.length > 0 && <div className="chapters">
+          <h3 className="sub-label chapters__label" data-reveal>{profile.chaptersLabel}</h3>
           <ol className="chapters__list">
             {profile.chapters.map((c, i) => (
               <li className="chapter" id={c.id} key={c.id} data-reveal>
@@ -117,7 +118,7 @@ export default function Introduction() {
               </li>
             ))}
           </ol>
-        </div>
+        </div>}
       </div>
     </section>
   );

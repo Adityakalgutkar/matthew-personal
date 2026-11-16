@@ -14,7 +14,8 @@ export function personalChannels(p) {
 
 export function organisationChannels(p) {
   const rows = [];
-  if (p.website) rows.push({ key: 'website', icon: 'globe', label: 'El Shaddai Charitable Trust', value: p.websiteLabel, href: p.website, external: true });
+  if (p.website) rows.push({ key: 'website', icon: 'globe', label: p.websiteName || 'El Shaddai Charitable Trust', value: p.websiteLabel, href: p.website, external: true });
+  if (p.marathonWebsite) rows.push({ key: 'marathon', icon: 'globe', label: 'Goa Marathon', value: `Races and registration · ${p.marathonWebsiteLabel}`, href: p.marathonWebsite, external: true });
   if (p.churchWebsite) rows.push({ key: 'church', icon: 'globe', label: 'Faith Community Church', value: p.churchWebsiteLabel, href: p.churchWebsite, external: true });
   if (p.churchYouTube) rows.push({ key: 'church-yt', icon: 'globe', label: 'Sunday services and sermons', value: 'Watch on YouTube', href: p.churchYouTube, external: true });
   if (p.organisationPhone) rows.push({ key: 'org-phone', icon: 'phone', label: 'El Shaddai office', value: p.organisationPhone, href: tel(p.organisationPhone) });

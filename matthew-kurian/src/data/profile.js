@@ -65,7 +65,7 @@ export const profile = {
     { title: 'Education', text: 'Schooling for children outside the system, including non-formal education.' },
     { title: 'Addiction recovery', text: 'His first work in Goa, with people recovering from drugs and alcohol.' },
     { title: 'Ministry', text: 'Pastoral care, prayer meetings and a football ministry for young people.' },
-    { title: 'Enterprise', text: 'Bespoke fashion and hospitality businesses in Goa.' },
+    { title: 'Enterprise', text: 'Bespoke, made-to-measure fashion through Style BU.' },
   ],
 
   // Quotations, each from a named public source (see CONTENT-SOURCES.md).
@@ -141,18 +141,18 @@ export const profile = {
       body: [
         'Matthew’s first work in Goa was in addiction recovery, at a time when few organisations in the state worked in the field. He worked with IPHB, then in Altinho and now at Bambolim beside Goa Medical College, with Kripa’s alcohol centre for men, and at a de-addiction centre in Mapusa run under Asilo Hospital.',
         'Alongside his life’s work with El Shaddai, he has built businesses of his own, and has been described as a serial entrepreneur. A love of fashion, and frustration with ill-fitting ready-made wear, led him to open a bespoke tailoring store, first in Calangute and then in Mapusa. It became Style BU, short for “Be Unique”: made-to-measure clothing for everyday wear and weddings, with clients ranging from film stars to five-star hotels ordering uniforms. By 2022 it had employed around 50 people over roughly a decade and staged two fashion shows, and Matthew spoke of building a fashion industry in Goa that develops young designers and models.',
-        'Company records also list him as a director of three hospitality companies in Goa.',
       ],
       ledger: 'ventures',
     },
     {
       id: 'leadership-ministry',
       title: 'Leadership & ministry',
+      viewTitle: { 'el-shaddai': 'Leadership', 'goa-marathon': 'Leadership' },
       period: '1997 onwards',
       body: [
         'As Founder and Managing Trustee, Matthew has helped steer El Shaddai from a single small home in Goa to work across Kerala, Karnataka and Tamil Nadu, supported by partner offices that opened in the United Kingdom in 2009 and Germany in 2010. He has travelled across India and overseas to speak for child welfare, and has championed non-formal education as a way to reach children that ordinary schooling leaves behind.',
         'In 1999 he and Anita also set up El Shaddai Charitable Trust in the United Kingdom, a registered charity created solely to support the work in Goa. Closer to home, El Shaddai runs the annual Goa Marathon to promote fitness and raise funds for its children’s programmes; Matthew flagged off the 2025 race at Miramar.',
-        'He is also a pastor. Known to many simply as Pastor Matthew, he is listed first among the pastors of Faith Community Church in Mapusa and has led the church’s Sunday prayer meetings in Calangute. The church began in 1993 with eight members and has since planted churches in several Goan towns, with mission churches in Karnataka and Maharashtra; it has been part of the Worldwide Assemblies of God movement since 2003. Matthew, his wife Julia and their team there focus on helping people reach their God-given potential. Working with the UK charity Coaching For Christ, he helped train local coaches so the church could run a football ministry for children in the area. One young man who grew up in El Shaddai’s care, from kindergarten to Class 10, has described Pastor Matthew and Anita as the parents he looked up to.',
+        { views: ['full'], text: 'He is also a pastor. Known to many simply as Pastor Matthew, he is listed first among the pastors of Faith Community Church in Mapusa and has led the church’s Sunday prayer meetings in Calangute. The church began in 1993 with eight members and has since planted churches in several Goan towns, with mission churches in Karnataka and Maharashtra; it has been part of the Worldwide Assemblies of God movement since 2003. Matthew, his wife Julia and their team there focus on helping people reach their God-given potential. Working with the UK charity Coaching For Christ, he helped train local coaches so the church could run a football ministry for children in the area. One young man who grew up in El Shaddai’s care, from kindergarten to Class 10, has described Pastor Matthew and Anita as the parents he looked up to.' },
       ],
       points: [
         { when: '1999', what: 'El Shaddai UK registered as a charity in England' },
@@ -161,7 +161,7 @@ export const profile = {
         { when: '2025', what: 'Flags off the Goa Marathon at Miramar, 9 February' },
       ],
       media: [
-        { src: '/life/ministry-stage.jpg', w: 960, h: 1280, alt: 'Matthew Kurian standing at a clear lectern on a stage with red lettering behind', caption: 'Pastor Matthew on stage.', focus: 'center 22%' },
+        { views: ['full'], src: '/life/ministry-stage.jpg', w: 960, h: 1280, alt: 'Matthew Kurian standing at a clear lectern on a stage with red lettering behind', caption: 'Pastor Matthew on stage.', focus: 'center 22%' },
         { src: '/life/matthew-anita-2012.jpg', w: 1400, h: 935, alt: 'Matthew Kurian and Anita Edgar', caption: 'With El Shaddai co-founder Anita Edgar, May 2012.' },
       ],
     },
@@ -202,7 +202,7 @@ export const profile = {
       title: 'Present day',
       period: 'Today',
       body: [
-        'Nearly three decades after founding El Shaddai, Matthew remains its Founder and Managing Trustee, working from the Trust’s base in Assagao, North Goa. He continues to serve as a pastor at Faith Community Church in Mapusa, runs Style BU, and is a director of hospitality businesses in Goa.',
+        'Nearly three decades after founding El Shaddai, Matthew remains its Founder and Managing Trustee, working from the Trust’s base in Assagao, North Goa. He continues to serve as a pastor at Faith Community Church in Mapusa, and runs Style BU.',
         'Goa, the place he came to in 1993 to help others rebuild their lives, has been his home ever since.',
       ],
       media: [
@@ -270,15 +270,9 @@ export const profile = {
     { year: '2023', title: 'Deepika Maanava Shresta Award', by: 'Deepika, Kerala' },
   ],
 
-  // Other ventures. Source: Ministry of Corporate Affairs director record,
-  // DIN 02209241 (the same DIN is a director of El Shaddai's foundations).
-  // Names shown without "Private Limited". Confirm with Matthew which
-  // ones he wants listed, and their trading names, before publishing.
+  // Businesses. The hospitality companies were removed at Matthew's request (Nov 2026).
   ventures: [
     { name: 'Style BU', role: 'Founder', since: '', note: 'Bespoke clothing, Mapusa' },
-    { name: 'Goandream Hospitality', role: 'Director', since: '2005' },
-    { name: 'Schreiber Resorts', role: 'Director', since: '2011' },
-    { name: 'Abigail Resorts', role: 'Director', since: '2016' },
   ],
 
   // His work
@@ -301,6 +295,12 @@ export const profile = {
   facebook: 'https://www.facebook.com/Goanpastor/',
   website: 'https://childrescue.net/',
   websiteLabel: 'childrescue.net',
+
+  // Other websites. Each view decides which of these it shows.
+  marathonWebsite: 'https://goamarathon.org/',
+  marathonWebsiteLabel: 'goamarathon.org',
+  styleBuWebsite: 'https://stylebu.in/',
+  styleBuWebsiteLabel: 'stylebu.in',
 
   // Church. Shown in Contact under "Faith Community Church".
   churchWebsite: 'https://churchingoa.com/',

@@ -4,9 +4,10 @@ import { titleLine } from '../data/profile.js';
 const attr = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
 export function renderHeadTags(p) {
-  const title = `${p.fullName} — ${titleLine(p)}, ${p.organisation}`;
-  const description = `${p.fullName}, ${titleLine(p)} of ${p.organisation}, ${p.location}. ${p.heroIntroduction}`;
+  const title = (p.meta && p.meta.title) || `${p.fullName} — ${titleLine(p)}, ${p.organisation}`;
+  const description = (p.meta && p.meta.description) || `${p.fullName}, ${titleLine(p)} of ${p.organisation}, ${p.location}. ${p.heroIntroduction}`;
   const base = p.siteUrl ? p.siteUrl.replace(/\/$/, '') : '';
+  const pageUrl = base + (p.viewPath && p.viewPath !== '/' ? p.viewPath : '/');
   const image = base && p.ogImage ? `${base}${p.ogImage}` : '';
 
   const tags = [
@@ -22,8 +23,8 @@ export function renderHeadTags(p) {
     `<meta name="twitter:title" content="${attr(p.fullName)}" />`,
   ];
   if (base) {
-    tags.push(`<link rel="canonical" href="${attr(base + '/')}" />`);
-    tags.push(`<meta property="og:url" content="${attr(base + '/')}" />`);
+    tags.push(`<link rel="canonical" href="${attr(pageUrl)}" />`);
+    tags.push(`<meta property="og:url" content="${attr(pageUrl)}" />`);
   }
   if (image) {
     tags.push(`<meta property="og:image" content="${attr(image)}" />`);
@@ -35,9 +36,11 @@ export function renderHeadTags(p) {
     '@type': 'Person',
     name: p.fullName,
     jobTitle: titleLine(p),
-    worksFor: { '@type': 'NGO', name: p.organisation, url: p.website, foundingDate: p.organisationFounded },
+    worksFor: p.view === 'business'
+      ? { '@type': 'Organization', name: p.organisation, url: p.website }
+      : { '@type': 'NGO', name: p.organisation, url: p.website, foundingDate: p.organisationFounded },
     address: { '@type': 'PostalAddress', addressRegion: p.region, addressCountry: p.country },
-    ...(base ? { url: base + '/' } : {}),
+    ...(base ? { url: pageUrl } : {}),
     ...(image ? { image } : {}),
   };
   tags.push(`<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>`);

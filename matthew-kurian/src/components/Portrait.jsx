@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { profile } from '../data/profile.js';
+import { profile } from '../data/current.js';
 
 /** Shows the first portrait source that loads (see profile.profileImages). */
 export default function Portrait({ caption }) {

@@ -1,13 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
-import { profile } from '../data/profile.js';
+import { profile } from '../data/current.js';
 import { MenuIcon, CloseIcon, SaveIcon } from './Icons.jsx';
 
-export const NAV = [
-  { href: '#about', num: '01', label: 'About' },
-  { href: '#work', num: '02', label: 'His work' },
-  { href: '#gallery', num: '03', label: 'Gallery' },
-  { href: '#contact', num: '04', label: 'Contact' },
-];
+const SECTION_LABELS = { about: 'About', work: 'His work', gallery: 'Gallery', contact: 'Contact' };
+
+/** Sections in the current view, numbered in order. */
+export const NAV = profile.sections
+  .filter((id) => id !== 'gallery' || (profile.gallery || []).length > 0)
+  .map((id, i) => ({ id, href: `#${id}`, num: String(i + 1).padStart(2, '0'), label: SECTION_LABELS[id] }));
+
+export const sectionNum = (id) => (NAV.find((n) => n.id === id) || {}).num || '';
+export const hasSection = (id) => NAV.some((n) => n.id === id);
 
 export default function Header({ vcardHref, onSave }) {
   const [open, setOpen] = useState(false);
