@@ -22,6 +22,7 @@ export default function App() {
   return (
     <>
       <a className="skip-link" href="#contact">Skip to contact</a>
+      <PreviewSwitcher />
       <Header vcardHref={href} onSave={onSave} />
       <main>
         <Hero {...props} />
@@ -33,7 +34,6 @@ export default function App() {
       </main>
       <Footer />
       <ActionBar {...props} />
-      <PreviewSwitcher />
       <div className={`toast${toast ? ' is-shown' : ''}`} role="status" aria-live="polite">{toast}</div>
     </>
   );
